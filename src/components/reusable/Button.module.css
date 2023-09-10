@@ -2,7 +2,8 @@
     width: 120px;
     height: 45px;
     align-self: center;
-    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px rgba(26, 26, 26, 0.486);
 }
 
 .primary {

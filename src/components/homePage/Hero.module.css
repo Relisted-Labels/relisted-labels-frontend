@@ -68,7 +68,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    body{
+    .home {
         background-image: url('../../assets/homepage-1.svg');
         background-repeat: no-repeat;
         background-size: cover;

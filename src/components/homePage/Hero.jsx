@@ -5,9 +5,16 @@ import Image2 from '../../assets/image-2.svg'
 import Image3 from '../../assets/image-3.svg'
 import Styles from "./Hero.module.css"
 import Button from '../reusable/Button'
+import { useNavigate } from 'react-router-dom'
 
 
 export const Hero = () => {
+    const navigate = useNavigate();
+
+
+    const navigateToAuth = () => {
+        navigate("/auth")
+    };
   return (
     <>
     <div className={Styles.navbar}>
@@ -21,7 +28,7 @@ export const Hero = () => {
             </h2>
             <p>Buy, Sell and Rent Your Favourite Cloths</p>
 
-            <Button name='Get Started' importance='primary' onClick={() => {window.location.href = '/signup'}} />
+            <Button name='Get Started' importance='primary' onClick={navigateToAuth} />
         </div>
 
         <img src={HomePage} alt="" />
@@ -36,7 +43,7 @@ export const Hero = () => {
 
     <div className={Styles.footer}>
         <p>Ready Now?</p>
-        <Button name='Get Started' importance='secondary' onClick={() => {window.location.href = '/signup'}} />
+        <Button name='Get Started' importance='secondary' onClick={navigateToAuth} />
     </div>
     </>
   )
