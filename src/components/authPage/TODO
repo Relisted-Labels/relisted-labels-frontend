@@ -1,0 +1,45 @@
+AuthPage TODO
+
+Implement token management
+<!-- Token management is a crucial aspect of implementing authentication in your application. It involves handling token creation, validation, renewal, and dealing with token expiration. Here's a step-by-step guide on how to implement token management in your app:
+
+**1. Token Creation:**
+   - When a user logs in successfully, your server should generate a JWT (JSON Web Token) containing user-specific information like user ID, username, and any other relevant data.
+   - Sign this token using a secret key or private key to ensure its authenticity.
+   - Send this token to the client as part of the login response.
+
+**2. Token Validation:**
+   - On every subsequent request to authenticated endpoints, the client should include the JWT in the request headers (typically as the "Authorization" header with the "Bearer" scheme).
+   - On the server side, validate the token:
+     - Verify the token's signature using the secret key or public key (if you're using asymmetric encryption).
+     - Check the token's expiration date (contained in the "exp" claim).
+     - Ensure that the token is not on a blacklist (if you implement token revocation).
+
+**3. Token Renewal:**
+   - If the token is valid and hasn't expired, you can allow the user to access the requested resource.
+   - If the token is close to expiration, you can implement token renewal:
+     - Send a refresh token along with the initial token during login.
+     - When the access token expires, the client can send the refresh token to the server to request a new access token.
+     - The server should verify the refresh token and issue a new access token.
+
+**4. Handling Token Expiration:**
+   - If a token expires (i.e., the "exp" claim is in the past), the server should respond with a 401 Unauthorized status code.
+   - The client should recognize this response and, if possible, request a new token using the refresh token or prompt the user to log in again.
+
+**5. Implementing Token Revocation (Optional):**
+   - In some cases, you may need to revoke tokens before their natural expiration (e.g., if a user logs out or changes their password).
+   - You can maintain a blacklist of revoked tokens on the server and check incoming tokens against this blacklist during validation.
+
+**6. Token Expiry Strategy:**
+   - Set a reasonable expiration time for your tokens. Typically, access tokens have short lifetimes (e.g., 15 minutes to a few hours) to minimize security risks.
+   - Refresh tokens may have longer lifetimes, but they should also expire eventually for added security.
+
+**7. Error Handling:**
+   - Ensure that your client-side code handles token-related errors gracefully. For example, if a request fails due to an expired token, prompt the user to log in again or automatically renew the token if possible.
+
+By following these steps and best practices, you can implement effective token management in your app, ensuring that users have secure and seamless access to authenticated resources while mitigating security risks associated with token expiration. -->
+Finish client side input validation
+Implement SSO
+Make isAuthenticated context instead of state
+Implement animations on button to show hover and action state
+Improve loading speed of token and fetching speed in general.

@@ -1,0 +1,109 @@
+
+
+.authContainer {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.authImage {
+    flex-basis: 50%;
+    height: 100%;
+}
+
+.authFormContainer {
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.authForm {
+    width: 70%;
+}
+
+.authHeader {
+    font-size: 48px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.authTitle {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 100;
+}
+
+.authForm input {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.authForm .buttonSpan {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.authOption {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.authOption span{
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.OauthButton {
+    width: 100%;
+    display: flex;
+    column-gap: 15px;
+    background-color: white;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 11px;
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+.OauthButton span {
+    font-size: 22.5px;
+}
+
+@media screen and (max-width: 768px) {
+    .authImage {
+        display: none;
+    }
+
+    
+
+.authContainer {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.authFormContainer {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.authForm {
+    width: 80%;
+}
+}
+
