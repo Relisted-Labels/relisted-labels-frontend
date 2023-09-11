@@ -1,0 +1,9 @@
+.HomeListings {
+    margin: 60px;
+}
+
+@media (max-width: 600px) {
+    .HomeListings {
+        margin: 30px;
+    }
+}

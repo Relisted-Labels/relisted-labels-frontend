@@ -1,0 +1,69 @@
+.searchBar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px auto;
+    background: rgb(196, 196, 196);
+    height: 55px;
+    border-radius: 30px;
+}
+
+.searchBar input {
+    flex-basis: 55%;
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid grey;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.searchBar input:focus {
+    border: none;
+    border-right: 1px solid grey;
+    outline: none;
+}
+
+.searchBar button {
+    background-color: black;
+    color: white;
+    flex-grow: 1;
+    height: 100%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.searchBar .custom-select {
+    height: 30px;
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    align-items: center;
+    min-width: 100px;
+    padding: 15px;
+
+}
+
+.searchBar .custom-select .options {
+    display: none;
+}
+
+.searchBar .custom-select.open  {
+    height: 40px;
+    background-color: transparent;
+}
+
+.searchBar .custom-select.open .options {
+    display: flex;
+    background-color: rgb(196, 196, 196);
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: inherit;
+    padding: inherit;
+    flex-direction: column;
+}
+
+.searchBar .custom-select.open .options .option {
+    padding: 7px 0px;
+}
