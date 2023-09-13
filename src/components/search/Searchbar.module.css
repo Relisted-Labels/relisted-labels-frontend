@@ -31,6 +31,7 @@
     height: 100%;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
+    border: none;
 }
 
 .searchBar .custom-select {
@@ -39,8 +40,9 @@
     display: flex;
     position: relative;
     align-items: center;
-    min-width: 100px;
+    /* min-width: 100px; */
     padding: 15px;
+    cursor: pointer;
 
 }
 
@@ -66,4 +68,16 @@
 
 .searchBar .custom-select.open .options .option {
     padding: 7px 0px;
+}
+.mediaOption{
+    display: none;
+}
+.mediaBtn{
+    width: 20px;
+    height: 200px;
+}
+@media screen and (max-width: 600px) {
+    .searchBar input {
+        flex-basis: 73%;
+    }
 }

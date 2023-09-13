@@ -57,6 +57,28 @@ const SearchBar = () => {
         placeholder={screenWidth > 548 ? 'Search by username, item name, category...' : 'Corporate chic'}
       />
       {/* Custom Select */}
+      {screenWidth < 600 ? (
+        // eslint-disable
+        <div className={styles.mediaOption}>
+        <div className={`${styles['custom-select']} ${isOpen ? styles.open : ''}`}>
+          <div className={styles['selected-option']} onClick={toggleCustomSelect}>
+            {selectedCriterionLabel}
+          </div>
+          <div className={styles.options}>
+            {criteria.map((criterion) => (
+              <div
+                key={criterion.value}
+                className={styles.option}
+                onClick={() => handleCustomSelectChange(criterion.value)}
+              >
+                {criterion.label}
+              </div>
+            ))}
+          </div>
+        </div>
+        </div>
+      ) : (
+        <div>
       <div className={`${styles['custom-select']} ${isOpen ? styles.open : ''}`}>
         <div className={styles['selected-option']} onClick={toggleCustomSelect}>
           {selectedCriterionLabel}
@@ -73,6 +95,10 @@ const SearchBar = () => {
           ))}
         </div>
       </div>
+      </div>
+      )}
+      
+      
 
       {/* Hidden Select */}
       <select
@@ -87,10 +113,10 @@ const SearchBar = () => {
           </option>
         ))}
       </select>
-      {screenWidth > 550 ? ( // Adjust the screen width threshold as needed
-        <button onClick={handleSearch}>Search</button>
+      {screenWidth < 600 ? ( // Adjust the screen width threshold as needed
+        <button onClick={handleSearch} className={styles.mediaBtn}><img width="27" height="27" src="https://img.icons8.com/ios/27/ffffff/search--v1.png" alt="search--v1"/></button> // Replace with your icon component
       ) : (
-        <button onClick={handleSearch}><img width="27" height="27" src="https://img.icons8.com/ios/27/ffffff/search--v1.png" alt="search--v1"/></button> // Replace with your icon component
+        <button onClick={handleSearch}>Search</button>
       )}
     </div>
   );
