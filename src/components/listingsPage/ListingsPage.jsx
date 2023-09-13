@@ -9,29 +9,29 @@ import Navbar from "../reusable/Navbar";
 
 
 const ListingsPage = () => {
-    // const [userId, setUserId] = useState(null);
-    // const [userName, setUserName] = useState('Stranger');
-    // const [email, setEmail] = useState('');
-    // const navigate = useNavigate();
+    const [userId, setUserId] = useState(null);
+    const [userName, setUserName] = useState('Stranger');
+    const [email, setEmail] = useState('');
+    const navigate = useNavigate();
 
-    // const token = localStorage.getItem("userAuthToken");
+    const token = localStorage.getItem("userAuthToken");
 
-    // const getUserInfoFromToken = () => {
-    //     if (token) {
-    //         const userInfo = jwtDecode(token);
-    //         console.log(userInfo);
-    //         setUserId(userInfo.user.id);
-    //         setEmail(userInfo.user.email);
-    //         setUserName(userInfo.user.username)
-    //         return userInfo;
-    //     } else {
-    //         navigate('/auth');
-    //     }
-    // }
+    const getUserInfoFromToken = () => {
+        if (token) {
+            const userInfo = jwtDecode(token);
+            console.log(userInfo);
+            setUserId(userInfo.user.id);
+            setEmail(userInfo.user.email);
+            setUserName(userInfo.user.username)
+            return userInfo;
+        } else {
+            navigate('/auth');
+        }
+    }
 
-    // useEffect(() => {
-    //     getUserInfoFromToken()
-    // }, []);
+    useEffect(() => {
+        getUserInfoFromToken()
+    }, []);
 
     const getHomeListings = (id) => {
         //This will take the user's id, and then make a call to the backend API. 
