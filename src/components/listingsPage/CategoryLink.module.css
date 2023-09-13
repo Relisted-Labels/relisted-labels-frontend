@@ -1,0 +1,26 @@
+.link{
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .link ul {
+        display: flex;
+    }
+    .link ul li{
+        list-style: none;
+        margin-right: 15px;
+        /* padding: 10px 5px; */
+        display: grid;
+        place-items: center;
+    }
+    .link ul li a{
+        font-size: 21px;
+        text-decoration: none;
+        font-weight: 500;
+        color: #000;
+        margin: 10px 0;
+    }
+}

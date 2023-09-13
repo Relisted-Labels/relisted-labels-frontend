@@ -8,13 +8,14 @@
 }
 
 .itemImage {
-    width: 150px;
-    height: 200px;
-    /* border-radius: 40px; */
+    width: 180px;
+    /* height: 200px; */
+    border-radius: 10px;
     padding-bottom: 10px;
 }
 
 .itemName {
-    font-size: 22px;
+    font-size: 18px;
+
 }
 

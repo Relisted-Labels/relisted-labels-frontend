@@ -1,15 +1,17 @@
 import { useState, useEffect } from "react";
 import Category from "./Category";
+import CategoryLink from "./CategoryLink";
 
 const CategoryListings = () => {
     return (
         <>
         <h2>Categories</h2>
-        <Category name="Corporate Chic"/>
+        <CategoryLink />
+        <Category name="All categories"/>
         
         {/* // <Category name="Trendy Casual" /> */}
-        <Category name="Owambe Traditional" />
-        <Category name="iWorkFromHome"/>
+        <Category name="Women" />
+        <Category name="Traditional"/>
         </>
     )
 }
