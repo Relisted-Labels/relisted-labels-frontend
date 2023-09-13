@@ -52,24 +52,47 @@ const AuthPage = () => {
     }));
   };
 
-  const registerHandler = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await axios.post(
-        "https://relisted-labels-dev.onrender.com/auth/register",
-        registerCredentials
-      );
-      if (response.status === 201) {
-        setHasAccount(true);
-      } else {
-        setRegisterError(
-          "An unknown error occurred. Please validate your details and try again."
-        );
-      }
-    } catch (error) {
-      console.error("Error submitting the form:", error);
-    }
-  };
+ const registerHandler = async (e) => {
+   e.preventDefault();
+   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+   if (!emailRegex.test(registerCredentials.email)) {
+     setRegisterError("Please enter a valid email address.");
+     return;
+   }
+   const usernameRegex = /^[a-zA-Z0-9_]+$/;
+   if (!usernameRegex.test(registerCredentials.username)) {
+     setRegisterError(
+       "Username can only contain letters, numbers, and underscores."
+     );
+     return;
+   }
+   if (
+     registerCredentials.password.length < 8 ||
+     !/[a-z]/.test(registerCredentials.password) || // At least one lowercase letter
+     !/[A-Z]/.test(registerCredentials.password) || // At least one uppercase letter
+     !/[0-9]/.test(registerCredentials.password) // At least one number
+   ) {
+     setRegisterError(
+       "Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, and one number."
+     );
+     return;
+   }
+   try {
+     const response = await axios.post(
+       "https://relisted-labels-dev.onrender.com/auth/register",
+       registerCredentials
+     );
+     if (response.status === 201) {
+       setHasAccount(true);
+     } else {
+       setRegisterError(
+         "An unknown error occurred. Please validate your details and try again."
+       );
+     }
+   } catch (error) {
+     console.error("Error submitting the form:", error);
+   }
+ };
 
   const loginHandler = async (e) => {
     e.preventDefault();
@@ -148,8 +171,8 @@ const AuthPage = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                width="35"
-                height="35"
+                width="30"
+                height="30"
                 viewBox="0 0 48 48"
               >
                 <path
@@ -176,8 +199,8 @@ const AuthPage = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                width="48"
-                height="48"
+                width="30"
+                height="30"
                 viewBox="0 0 48 48"
               >
                 <path
@@ -326,8 +349,8 @@ const AuthPage = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                width="35"
-                height="35"
+                width="30"
+                height="30"
                 viewBox="0 0 48 48"
               >
                 <path
@@ -354,8 +377,8 @@ const AuthPage = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                width="48"
-                height="48"
+                width="30"
+                height="30"
                 viewBox="0 0 48 48"
               >
                 <path
