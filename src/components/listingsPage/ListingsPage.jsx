@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import SearchBar from "../search/Searchbar";
 import CategoryListings from "./CategoryListings";
 import styles from './ListingsPage.module.css'
+import ListHero from "./ListHero";
 
 
 const ListingsPage = () => {
@@ -43,6 +44,7 @@ const ListingsPage = () => {
     return (
         <div id="HomeListings" className={styles.HomeListings}>
             <SearchBar />
+            <ListHero />
             <CategoryListings/>
         </div>
     )
