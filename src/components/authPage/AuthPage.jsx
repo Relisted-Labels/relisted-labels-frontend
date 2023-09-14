@@ -90,7 +90,7 @@ const AuthPage = () => {
        );
      }
    } catch (error) {
-     console.error("Error submitting the form:", error);
+     console.log("Error submitting the form:",);
    }
  };
 
@@ -105,6 +105,7 @@ const AuthPage = () => {
         const token = response.data.token;
         localStorage.setItem("userAuthToken", token);
         setIsAuthenticated(true);
+        navigate("/listings");
       } else {
         setLoginError(
           "An unknown error occured. Please validate your details and try again."
@@ -112,6 +113,7 @@ const AuthPage = () => {
       }
     } catch (error) {
       console.error("Error logging in:", error);
+      console.error("Response data:", error.response.data); // Log the response data
     }
   };
 
