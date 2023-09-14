@@ -4,6 +4,9 @@
     scroll-behavior: smooth;
     margin-top: 10px;
 }
+.link::-webkit-scrollbar{
+    display:  none;
+}
 
 @media screen and (max-width: 600px) {
     .link ul {
