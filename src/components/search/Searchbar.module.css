@@ -81,6 +81,9 @@
     .searchBar input {
         flex-basis: 65%;
     }
+    .searchBar input:focus {
+        border: none;
+    }
 }
 @media screen and (max-width: 350px) {
     .searchBar{
