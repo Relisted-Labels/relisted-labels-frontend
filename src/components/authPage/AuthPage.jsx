@@ -90,7 +90,7 @@ const AuthPage = () => {
        );
      }
    } catch (error) {
-     console.error("Error submitting the form:", error);
+     console.log("Error submitting the form:",);
    }
  };
 
@@ -113,6 +113,7 @@ const AuthPage = () => {
       }
     } catch (error) {
       console.error("Error logging in:", error);
+      console.error("Response data:", error.response.data); // Log the response data
     }
   };
 

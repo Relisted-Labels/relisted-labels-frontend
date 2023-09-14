@@ -9,7 +9,7 @@ export default function Button(props) {
   }, [props.importance]);
 
   if (isImportant) {
-    return <button className={`${styles.button} ${styles.primary}`}>{props.name}</button>;
+    return <button onClick={props.onClick} className={`${styles.button} ${styles.primary}`}>{props.name}</button>;
   } else {
     return (
       <button onClick={props.onClick} className={`${styles.button} ${styles.secondary}`}>
