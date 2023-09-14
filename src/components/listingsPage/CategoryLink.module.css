@@ -8,7 +8,6 @@
     display:  none;
 }
 
-@media screen and (max-width: 600px) {
     .link ul {
         display: flex;
         align-items: center;
@@ -21,20 +20,23 @@
         align-items: center;
         justify-content: center;
         padding: 15px 25px;
-        background-color: #414040;
-        border-radius: 10px;
+        background-color: #bebebe;
+        border-radius: 20px;
     }
     .link ul li a{
         font-size: 21px;
         text-decoration: none;
         font-weight: 500;
         /* background-color: #414040; */
-        color: #fff;
+        color: rgb(65, 65, 65);
         margin-bottom: -3px;
         /* padding: inherit; */
         border-radius: 10px;
     }
-}
-.active{
+.link ul li.active{
     background-color: #000;
+}
+
+.link ul li.active a{
+    color: #fff;
 }

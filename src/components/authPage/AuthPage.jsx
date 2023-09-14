@@ -96,6 +96,7 @@ const AuthPage = () => {
 
   const loginHandler = async (e) => {
     e.preventDefault();
+
     try {
       const response = await axios.post(
         "https://relisted-labels-dev.onrender.com/auth/login",
@@ -341,7 +342,7 @@ const AuthPage = () => {
               <Button
                 importance="primary"
                 name="Log in"
-                onClick={registerHandler}
+                onClick={loginHandler}
               />
             </span>
             <p className={styles.authOption}>Or Log In With</p>

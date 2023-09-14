@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import SearchBar from "../search/Searchbar";
 import CategoryListings from "./CategoryListings";
 import styles from './ListingsPage.module.css'
-import ListHero from "./ListHero";
+import Banner from "./Banner";
 import Navbar from "../reusable/Navbar";
 
 
@@ -45,7 +45,7 @@ const ListingsPage = () => {
     return (
         <div id="HomeListings" className={styles.HomeListings}>
             <SearchBar />
-            <ListHero />
+            <Banner />
             <CategoryListings/>
             <Navbar />
         </div>

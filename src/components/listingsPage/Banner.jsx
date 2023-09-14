@@ -1,4 +1,4 @@
-import styles from './ListHero.module.css'
+import styles from './Banner.module.css'
 
 import React from 'react'
 
@@ -7,7 +7,7 @@ const ListHero = () => {
     // styling for the top image category
     <div className={styles.slide}>
       <div>
-        get me an image
+        No Image selected.
       </div>
     </div>
   )
