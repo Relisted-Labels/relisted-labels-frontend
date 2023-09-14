@@ -79,13 +79,19 @@
 }
 @media screen and (max-width: 600px) {
     .searchBar input {
-        flex-basis: 65%;
+        width: 70%;
     }
     .searchBar input:focus {
         border: none;
     }
     .searchBar button{
         width: 30%;
+    }
+    .searchBar{
+        justify-content: space-between;
+    }
+    .searchBar .custom-select{
+        display: none;
     }
 }
 @media screen and (max-width: 350px) {
