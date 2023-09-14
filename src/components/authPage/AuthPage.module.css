@@ -60,6 +60,7 @@
     font-weight: bold;
     text-decoration: underline;
     text-decoration-color: black;
+    cursor: pointer;
 }
 
 .OauthButton {
@@ -74,6 +75,7 @@
     border-radius: 11px;
     height: 45px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .OauthButton span {
