@@ -11,7 +11,7 @@
 }
 
 .searchBar input {
-    /* flex-basis: 55%; */
+    flex-basis: 55%;
     background-color: transparent;
     border: none;
     border-right: 1px solid grey;
@@ -28,8 +28,7 @@
 .searchBar button {
     background-color: black;
     color: white;
-    /* flex-grow: 1; */
-    display: none;
+    flex-grow: 1;
     height: 100%;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -80,7 +79,7 @@
 }
 @media screen and (max-width: 600px) {
     .searchBar input {
-        /* flex-basis: 73%; */
+        flex-basis: 65%;
     }
 }
 @media screen and (max-width: 350px) {
