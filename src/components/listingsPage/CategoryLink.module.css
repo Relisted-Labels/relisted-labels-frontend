@@ -11,19 +11,30 @@
 @media screen and (max-width: 600px) {
     .link ul {
         display: flex;
+        align-items: center;
+        justify-content: start;
     }
     .link ul li{
         list-style: none;
         margin-right: 15px;
-        /* padding: 10px 5px; */
-        display: grid;
-        place-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 25px;
+        background-color: #414040;
+        border-radius: 10px;
     }
     .link ul li a{
         font-size: 21px;
         text-decoration: none;
         font-weight: 500;
-        color: #000;
-        margin: 10px 0;
+        /* background-color: #414040; */
+        color: #fff;
+        margin-bottom: -3px;
+        /* padding: inherit; */
+        border-radius: 10px;
     }
+}
+.active{
+    background-color: #000;
 }

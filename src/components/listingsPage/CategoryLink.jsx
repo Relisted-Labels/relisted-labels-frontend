@@ -1,11 +1,12 @@
 import style from './CategoryLink.module.css'
 
 const CategoryLink = () => {
+
   return (
     <div className={style.link}>
       <ul>
-        <li>
-            <a href="#">All</a>
+        <li className={style.active}>
+            <a href="#" >All</a>
         </li>
         <li>
             <a href="#">Cooperate</a>
