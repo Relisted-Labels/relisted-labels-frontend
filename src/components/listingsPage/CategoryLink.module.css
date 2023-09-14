@@ -19,12 +19,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 15px 25px;
+        padding: 10px 12px;
         background-color: #bebebe;
         border-radius: 20px;
     }
     .link ul li a{
-        font-size: 21px;
+        font-size: 18px;
         text-decoration: none;
         font-weight: 500;
         /* background-color: #414040; */
