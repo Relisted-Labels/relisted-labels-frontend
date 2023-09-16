@@ -21,6 +21,10 @@ const AuthPage = () => {
     email: "",
     password: "",
   });
+  const usernameRegex = /^[A-Za-z0-9_]+$/;
+  const emailRegex = /^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+  const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+  const isSubmitDisabled = !registerCredentials.password || !registerCredentials.username || !registerCredentials.email ;
   const navigate = useNavigate();
 
   const isUserAuthenticated = () => {
@@ -54,29 +58,8 @@ const AuthPage = () => {
 
  const registerHandler = async (e) => {
    e.preventDefault();
-   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-   if (!emailRegex.test(registerCredentials.email)) {
-     setRegisterError("Please enter a valid email address.");
-     return;
-   }
-   const usernameRegex = /^[a-zA-Z0-9_]+$/;
-   if (!usernameRegex.test(registerCredentials.username)) {
-     setRegisterError(
-       "Username can only contain letters, numbers, and underscores."
-     );
-     return;
-   }
-   if (
-     registerCredentials.password.length < 8 ||
-     !/[a-z]/.test(registerCredentials.password) || // At least one lowercase letter
-     !/[A-Z]/.test(registerCredentials.password) || // At least one uppercase letter
-     !/[0-9]/.test(registerCredentials.password) // At least one number
-   ) {
-     setRegisterError(
-       "Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, and one number."
-     );
-     return;
-   }
+  let error = null;
+
    try {
      const response = await axios.post(
        "https://relisted-labels-dev.onrender.com/auth/register",
@@ -85,12 +68,15 @@ const AuthPage = () => {
      if (response.status === 201) {
        setHasAccount(true);
      } else {
+       error =
+         "An unknown error occurred. Please validate your details and try again.";
+       console.log("Error:", error); // Log the error to the console
        setRegisterError(
          "An unknown error occurred. Please validate your details and try again."
        );
      }
    } catch (error) {
-     console.log("Error submitting the form:",);
+     console.log("Error submitting the form:", error); // Log any network request error
    }
  };
 
@@ -132,7 +118,35 @@ const AuthPage = () => {
             <h4 className={styles.authTitle}>SIGN UP</h4>
             <br />
             <br />
-            <p>{registerError}</p>
+            <p className={styles.error}>{registerError}</p>
+            {registerCredentials.username &&
+              registerCredentials.username.length < 6 && (
+                <p className={styles.error}>
+                  username must be at least 6 characters
+                </p>
+              )}
+
+            {registerCredentials.password &&
+              !passwordRegex.test(registerCredentials.password) && (
+                <p className={styles.error}>
+                  Password must be at least 8 characters and contain at least
+                  one letter and one number.
+                </p>
+              )}
+            {registerCredentials.email &&
+              !emailRegex.test(registerCredentials.email) && (
+                <p className={styles.error}>
+                  Please enter a valid email address.
+                </p>
+              )}
+
+            {registerCredentials.username &&
+              !usernameRegex.test(registerCredentials.username) && (
+                <p className={styles.error}>
+                  Username can only contain letters, numbers, and underscores.
+                </p>
+              )}
+
             <label htmlFor="username">Username</label>
             <br />
             <input
@@ -164,6 +178,7 @@ const AuthPage = () => {
               <Button
                 importance="primary"
                 name="Sign Up"
+                disabled={isSubmitDisabled}
                 onClick={registerHandler}
               />
             </span>
