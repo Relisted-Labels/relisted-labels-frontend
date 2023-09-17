@@ -1,0 +1,49 @@
+.Section {
+    margin: 20px 0px 40px;
+}
+
+.Section h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.cardListings {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.itemImage {
+    width: 180px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.itemName {
+    font-size: 18px;
+    color: #000000;
+    padding:3px;
+}
+.discount {
+    text-decoration: line-through;
+    color: grey;
+    padding:3px;
+}
+.text{
+    color: grey;
+    padding:3px;
+}
+.showMoreButton{
+    color:white;
+    background-color:black;
+    width: 300px;
+    height: 40px;
+    align-self: center;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top:10px;
+}
+
+
