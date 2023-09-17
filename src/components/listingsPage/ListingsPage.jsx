@@ -6,6 +6,7 @@ import CategoryListings from "./CategoryListings";
 import styles from './ListingsPage.module.css'
 import Banner from "./Banner";
 import Navbar from "../reusable/Navbar";
+import NewSection from "./NewSection";
 
 
 const ListingsPage = () => {
@@ -47,6 +48,7 @@ const ListingsPage = () => {
             <SearchBar />
             <Banner />
             <CategoryListings/>
+            <NewSection />
             <Navbar />
         </div>
     )
