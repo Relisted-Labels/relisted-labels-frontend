@@ -21,7 +21,7 @@ const AuthPage = () => {
     email: "",
     password: "",
   });
-  const usernameRegex = /^[A-Za-z0-9_]+$/;
+  const usernameRegex = /^\w+$/;
   const emailRegex = /^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
   const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
   const isSubmitDisabled = !registerCredentials.password || !registerCredentials.username || !registerCredentials.email ;
@@ -120,6 +120,12 @@ const AuthPage = () => {
             <br />
             <p className={styles.error}>{registerError}</p>
             {registerCredentials.username &&
+              !usernameRegex.test(registerCredentials.username) && (
+                <p className={styles.error}>
+                  Username can only contain letters, numbers, and underscores.
+                </p>
+              )}
+            {registerCredentials.username &&
               registerCredentials.username.length < 6 && (
                 <p className={styles.error}>
                   username must be at least 6 characters
@@ -137,13 +143,6 @@ const AuthPage = () => {
               !emailRegex.test(registerCredentials.email) && (
                 <p className={styles.error}>
                   Please enter a valid email address.
-                </p>
-              )}
-
-            {registerCredentials.username &&
-              !usernameRegex.test(registerCredentials.username) && (
-                <p className={styles.error}>
-                  Username can only contain letters, numbers, and underscores.
                 </p>
               )}
 
