@@ -4,7 +4,7 @@ import ItemImg from '../../assets/itemImg.png'
 const ItemViewing = () => {
   return (
     <div className={Styles.container}>
-      <ItemImg />
+      <img src={ItemImg}/>
     </div>
   )
 }
