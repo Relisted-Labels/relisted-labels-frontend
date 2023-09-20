@@ -1,5 +1,6 @@
 import Styles from './ItemViewing.module.css'
 import ItemImg from '../../assets/itemImg.png'
+import {AiFillStar} from 'react-icons/ai'
 
 const ItemViewing = () => {
   return (
@@ -21,8 +22,15 @@ const ItemViewing = () => {
             <img src="" alt="" />
 
             <div className={Styles.text}>
-                <h3>Mrs Bridget</h3>
-                <p></p>
+                <h3>Mrs seller</h3>
+                <p>
+                    <AiFillStar className={Styles.icon}/>
+                    <AiFillStar className={Styles.icon}/>
+                    <AiFillStar className={Styles.icon}/>
+                    <AiFillStar className={Styles.icon}/>
+                    <AiFillStar className={Styles.icon}/>
+                    <AiFillStar className={Styles.icon}/>
+                </p>
             </div>
         </div>
       </div>
