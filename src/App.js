@@ -4,6 +4,7 @@ import './App.css';
 import HomePage from './components/homePage/HomePage'; // Adjust the path as needed
 import AuthPage from './components/authPage/AuthPage';
 import ListingsPage from './components/listingsPage/ListingsPage';
+import ItemView from './components/itemViewing/ItemViewing'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route exact path="/" element={<HomePage/>} />
         <Route exact path="/auth" element={<AuthPage/>} />
         <Route exact path="/listings" element={<ListingsPage/>} />
+        <Route exact path="/viewing" element={<ItemView/>} />
         {/* Add more routes here if needed */}
       </Routes>
     </BrowserRouter>
