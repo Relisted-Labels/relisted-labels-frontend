@@ -1,5 +1,6 @@
 import Styles from './ItemViewing.module.css'
 import ItemImg from '../../assets/itemImg.png'
+import pfp from '../../assets/pfp.png'
 import {AiFillStar} from 'react-icons/ai'
 
 const ItemViewing = () => {
@@ -9,17 +10,12 @@ const ItemViewing = () => {
 
       <div className={Styles.description}>
         <div className={Styles.price}>
-            <h2>
-                Curve Blazer
-            </h2>
-
-            <p>
-                #9,000
-            </p>
+            <h2>Curve Blazer</h2>
+            <p>#9,000</p>
         </div>
 
         <div className={Styles.rating}>
-            <img src="" alt="" />
+            <img src={pfp} alt="" />
 
             <div className={Styles.text}>
                 <h3>Mrs seller</h3>
@@ -32,6 +28,42 @@ const ItemViewing = () => {
                     <AiFillStar className={Styles.icon}/>
                 </p>
             </div>
+        </div>
+
+        <div className={Styles.attribute}>
+          <p>
+            A white elegant blazer to make you look sharp and and cute with an extra side of seriousness for office wear
+          </p>
+            <ul>
+              <li>
+                <p>Product type</p>
+
+                <h5>Suit</h5>
+              </li>
+              <li>
+                <p>Color</p>
+
+                <h5>White</h5>
+              </li>
+              <li>
+                <p>Weekly Price</p>
+
+                <h5>#10,000</h5>
+              </li>
+              <li>
+              <p>Daily Price</p>
+
+                <h5>#3,000</h5>
+              </li>
+            </ul>
+        </div>
+      </div>
+
+      <div className={Styles.more}>
+        <h3>More like this <span>icon</span></h3>
+
+        
+        <div>
         </div>
       </div>
     </div>

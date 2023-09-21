@@ -1,0 +1,52 @@
+@media (max-width: 550px){
+    .container{
+        width: 100%;
+    }
+    .container img{
+        width: 100%;
+    }
+    .description{
+        padding: 10px;
+        margin-top: 15px;
+    }
+    .description .price{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+    .description .rating{
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+    }
+    .description .rating img{
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        margin-right: 10px;
+    }
+    .description .rating .text .icon{
+        color: gold;
+        height: 19px;
+        width: 19px;
+    }
+    .description .attribute ul{
+        width: 55%;
+        margin-top: 20px;
+    }
+    .description .attribute p{
+        font-size: 18px;
+    }
+    .description .attribute ul li{
+        display: flex;
+        align-items: center;
+        font-size: 19px;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 7px;
+    }
+    .description .attribute ul li p{
+        font-size: 17px;
+    }
+}
