@@ -1,0 +1,38 @@
+.itemCard {
+  padding: 16px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.itemCard:hover {
+  transform: translateY(-2px);
+}
+.container {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    margin: 20px 0px 40px;
+    gap: 50px;
+}
+.itemImage {
+    width: 180px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.itemName {
+    font-size: 18px;
+    color: #000000;
+    padding:3px;
+}
+.discount {
+    text-decoration: line-through;
+    color: grey;
+    padding:3px;
+}
+.text{
+    color: grey;
+    padding:3px;
+}
+
+
