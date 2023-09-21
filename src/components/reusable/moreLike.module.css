@@ -1,0 +1,15 @@
+.container img{
+    width: 250px;
+}
+.container{
+    width: 250px;
+    margin: 20px;
+}
+.container h3{
+    font-size: 21px;
+    margin-left: 1px;
+}
+.container p{
+    /* font-weight: 100; */
+    color: rgb(15, 15, 112);
+}
