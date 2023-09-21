@@ -1,9 +1,20 @@
 @media (max-width: 550px){
     .container{
         width: 100%;
+        position: relative;
     }
     .container img{
         width: 100%;
+    }
+    .container .cancel{
+        position: absolute;
+        float: left;
+        width: 30px;
+        height: 30px;
+        color: #000;
+        margin-top: 5px;
+        margin-left: 5px;
+
     }
     .description{
         padding: 10px;
@@ -15,6 +26,10 @@
         align-items: center;
         padding: 0 10px;
     }
+    .description .price p{
+        font-size: 27px;
+        font-weight: 500;
+    }
     .description .rating{
         display: flex;
         align-items: center;
@@ -25,6 +40,7 @@
         height: 60px;
         border-radius: 100%;
         margin-right: 10px;
+        margin-left: 10px;
     }
     .description .rating .text .icon{
         color: gold;
@@ -36,7 +52,12 @@
         margin-top: 20px;
     }
     .description .attribute p{
+        font-size: 21px;
+        margin-left: 10px;
+    }
+    .description .attribute h5{
         font-size: 18px;
+        /* font-weight: 200; */
     }
     .description .attribute ul li{
         display: flex;
@@ -45,8 +66,54 @@
         width: 100%;
         justify-content: space-between;
         margin-top: 7px;
+        /* margin-left: 10px; */
     }
     .description .attribute ul li p{
-        font-size: 17px;
+        font-size: 18px;
+        font-weight: 400;
+
+    }
+    .more .arrow{
+        margin-bottom: -4px;
+        width: 27px;
+    }
+    .more h3{
+        margin-left: 19px;
+        font-size: 21px;
+        margin-top: 10px;
+    }
+    .more .slide{
+        display: flex;
+        overflow: scroll;
+    }
+    .more .slide::-webkit-scrollbar{
+        display: none;
+    }
+
+    .cart{
+        margin-top: 20px;
+        width: 100%;
+        /* height: 60px; */
+        display: grid;
+        place-items: center;
+        padding: 20px 0;
+        padding-bottom: 20px;
+        box-shadow: 0 3px 16px 0 #b6b5b5;
+    }
+    .cart button{
+        width: 90%;
+        height: 55px;
+        font-size: 21px;
+        border: none;
+        background: #f5c3cb;
+        font-weight: 500;
+        display: grid;
+        place-items: center;
+        transition: .3s ease;
+        padding-top: 7px;
+    }
+    .cart button:hover{
+        color: #f5c3cb;
+        background: #313131;
     }
 }

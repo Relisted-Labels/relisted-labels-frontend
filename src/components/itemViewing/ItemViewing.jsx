@@ -1,11 +1,14 @@
 import Styles from './ItemViewing.module.css'
 import ItemImg from '../../assets/itemImg.png'
 import pfp from '../../assets/pfp.png'
-import {AiFillStar} from 'react-icons/ai'
+import MoreLike from '../reusable/MoreLike'
+import {AiFillStar, AiOutlineArrowRight} from 'react-icons/ai'
+import {RxCross2} from 'react-icons/rx'
 
 const ItemViewing = () => {
   return (
     <div className={Styles.container}>
+      <RxCross2 className={Styles.cancel}/>
       <img src={ItemImg}/>
 
       <div className={Styles.description}>
@@ -60,11 +63,22 @@ const ItemViewing = () => {
       </div>
 
       <div className={Styles.more}>
-        <h3>More like this <span>icon</span></h3>
+        <h3>More like this <span><AiOutlineArrowRight className={Styles.arrow}/></span></h3>
 
+        <div className={Styles.slide}>
+        <MoreLike />
+        <MoreLike />
+        <MoreLike />
+        <MoreLike />
+
+        </div>
         
         <div>
         </div>
+      </div>
+
+      <div className={Styles.cart}>
+        <button>Add To Cart</button>
       </div>
     </div>
   )

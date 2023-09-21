@@ -1,16 +1,16 @@
 import React from 'react'
-import Styles from './moreLike.module.css'
+import Styles from './MoreLike.module.css'
 import Image from '../../assets/moreLike.png'
 
-const moreLike = () => {
+const MoreLike = () => {
   return (
     <div className={Styles.container}>
       <img src={Image} alt="" />
 
-      {/* <h3>{productName}</h3>
-      <p>{category}</p> */}
+      <h3>Blue Jumpsuit</h3>
+      <p>Office fashion</p>
     </div>
   )
 }
 
-export default moreLike
+export default MoreLike
