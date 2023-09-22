@@ -1,7 +1,7 @@
 import Styles from './ItemViewing.module.css'
 import ItemImg from '../../assets/itemImg.png'
 import pfp from '../../assets/pfp.png'
-import MoreLike from '../reusable/MoreLike.jsx'
+import MoreLike from './MoreLike'
 import {AiFillStar, AiOutlineArrowRight} from 'react-icons/ai'
 import {RxCross2} from 'react-icons/rx'
 

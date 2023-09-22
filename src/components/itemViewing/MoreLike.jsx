@@ -13,4 +13,4 @@ const MoreLike = () => {
   )
 }
 
-export default MoreLike
+export default MoreLike;
