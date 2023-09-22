@@ -6,7 +6,7 @@ import ItemsList from "../searchresult/Itemslist";
 function SearchComponent({ closeSearch }) {
   const items = [
     {
-      imageSrc: "../../assets/Blazer.avif",
+      imageSrc: "../../assets/moreLike.png",
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Shirt",
@@ -14,7 +14,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/Blazer.avif",
+      imageSrc: "../../assets/moreLike.png",
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Shirt",
@@ -22,7 +22,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/Blazer.avif",
+      imageSrc: "../../assets/moreLike.png",
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Shirt",
@@ -30,7 +30,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/Blazer.avif",
+      imageSrc: "../../assets/moreLike.png",
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Shirt",
@@ -38,7 +38,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/Blazer.avif",
+      imageSrc: "../../assets/moreLike.png",
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Shirt",
@@ -46,7 +46,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/Blazer.avif",
+      imageSrc: "../../assets/moreLike.png",
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Glamorous",
@@ -54,7 +54,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/Blazer.avif",
+      imageSrc: "../../assets/moreLike.png",
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Glamorous",
@@ -62,7 +62,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/Blazer.avif",
+      imageSrc: "../../assets/moreLike.png",
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Glamorous",
@@ -70,7 +70,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/Blazer.avif",
+      imageSrc: "../../assets/moreLike.png",
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Glamorous",
@@ -78,7 +78,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/Blazer.avif",
+      imageSrc: "../../assets/moreLike.png",
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Glamorous",
@@ -86,7 +86,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/Blazer.avif",
+      imageSrc: "../../assets/moreLike.png",
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Glamorous",
@@ -94,7 +94,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/Blazer.avif",
+      imageSrc: "../../assets/moreLike.png",
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Glamorous",
@@ -102,7 +102,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/Blazer.avif",
+      imageSrc: "../../assets/moreLike.png",
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Glamorous",
@@ -110,7 +110,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/Blazer.avif",
+      imageSrc: "../../assets/moreLike.png",
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Glamorous",
@@ -119,14 +119,26 @@ function SearchComponent({ closeSearch }) {
     },
   ];
 
-  const [filteredItems, setFilteredItems] = useState(items);
+  const [filteredItems, setFilteredItems] = useState({});
+  const [searchTerm, setSearchTerm] = useState("");
 
   const handleSearch = (searchTerm) => {
     const filtered = items.filter((item) =>
       item.itemName.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setFilteredItems(filtered);
+     setSearchTerm(searchTerm);
   };
+
+  
+  let content;
+  if (searchTerm === "") {  
+    content = null;
+  } else if (filteredItems.length === 0) {
+    content = <p className={styles.searcherror}>No items were found matching the description.</p>;
+  } else {
+    content = <ItemsList items={filteredItems} />;
+  }
 
   return (
     <div className={styles.searchcomponent}>
@@ -134,7 +146,7 @@ function SearchComponent({ closeSearch }) {
         X
       </h2>
       <NewSearch handleSearch={handleSearch} />
-      <ItemsList items={filteredItems} />
+      {content}
     </div>
   );
 }
