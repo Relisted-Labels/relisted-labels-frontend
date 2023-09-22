@@ -19,4 +19,8 @@
         color: white;
         list-style: none;
     }
+    .navbar ul li .icon{
+        height: 40px;
+        width: 40px;
+    }
 }
