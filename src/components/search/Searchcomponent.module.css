@@ -2,11 +2,6 @@
     display: flex;
     justify-content: flex-end;
     padding-bottom: 20px;
-    height: 100vh;
-    position: absolute;
-    z-index: 9;
-    top: 0;
-    left: 0;
 }
 .searchicon {
     cursor: pointer;

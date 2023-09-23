@@ -13,9 +13,6 @@
     flex-wrap: wrap;
     margin: 20px 0px 40px;
     gap: 20px;
-    width: 100%;
-    height: 100vh;
-    background-color: #fff;
 }
 .itemImage {
     width: 150px;
