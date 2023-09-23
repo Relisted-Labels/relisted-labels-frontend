@@ -43,6 +43,7 @@
     .searchBar input {
         width: 80%;
         font-size: 18px;
+        flex-basis: 60%;
     }
     .searchBar input:focus {
         border: none;
