@@ -9,7 +9,7 @@
 }
 .container {
     display: flex;
-    justify-content:space-between;
+    justify-content:space-evenly;
     flex-wrap: wrap;
     margin: 20px 0px 40px;
     gap: 20px;
