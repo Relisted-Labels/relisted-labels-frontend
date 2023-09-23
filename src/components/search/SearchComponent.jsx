@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import styles from "./Searchcomponent.module.css";
 import NewSearch from "./NewSearch";
 import ItemsList from "../searchresult/Itemslist";
-
+import image from "./image/listingImg.png";
 function SearchComponent({ closeSearch }) {
   const items = [
     {
-      imageSrc: "../../assets/moreLike.png",
+      imageSrc: image,
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Shirt",
@@ -14,7 +14,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/moreLike.png",
+      imageSrc: image,
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Shirt",
@@ -22,7 +22,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/moreLike.png",
+      imageSrc: image,
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Shirt",
@@ -30,7 +30,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/moreLike.png",
+      imageSrc: image,
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Shirt",
@@ -38,7 +38,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/moreLike.png",
+      imageSrc: image,
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Shirt",
@@ -46,7 +46,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/moreLike.png",
+      imageSrc: image,
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Glamorous",
@@ -54,7 +54,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/moreLike.png",
+      imageSrc: image,
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Glamorous",
@@ -62,7 +62,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/moreLike.png",
+      imageSrc: image,
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Glamorous",
@@ -70,7 +70,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/moreLike.png",
+      imageSrc: image,
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Glamorous",
@@ -78,7 +78,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/moreLike.png",
+      imageSrc: image,
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Glamorous",
@@ -86,7 +86,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/moreLike.png",
+      imageSrc: image,
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Glamorous",
@@ -94,7 +94,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/moreLike.png",
+      imageSrc: image,
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Glamorous",
@@ -102,7 +102,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/moreLike.png",
+      imageSrc: image,
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Glamorous",
@@ -110,7 +110,7 @@ function SearchComponent({ closeSearch }) {
       discount: "PRP E90",
     },
     {
-      imageSrc: "../../assets/moreLike.png",
+      imageSrc: image,
       text: "Dress, UK 12",
       altText: "Dress, UK 12",
       itemName: "Glamorous",

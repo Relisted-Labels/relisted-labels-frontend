@@ -1,8 +1,19 @@
 .error {
     color:red;
 }
-
-
+.linkStyle{
+    text-decoration: none;
+    color: black;
+}
+.linkContain{
+    display: flex;
+    justify-content: flex-end;
+}
+.link{
+    display: flex;
+    cursor: pointer;
+    padding-bottom: 60px;
+}
 .authContainer {
     display: flex;
     align-items: center;
@@ -25,7 +36,11 @@
 .authForm {
     width: 70%;
 }
-
+.forgotPasswordHeader{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
 .authHeader {
     font-size: 48px;
     text-align: center;

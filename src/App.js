@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import HomePage from './components/homePage/HomePage'; // Adjust the path as needed
 import AuthPage from './components/authPage/AuthPage';
+import ForgotPassword from './components/authPage/ForgotPassword';
 import ListingsPage from './components/listingsPage/ListingsPage';
 import ItemView from './components/itemViewing/ItemViewing'
 
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/auth" element={<AuthPage/>} />
         <Route exact path="/listings" element={<ListingsPage/>} />
         <Route exact path="/viewing" element={<ItemView/>} />
+        <Route exact path="/forgotpassword" element={<ForgotPassword />} />
         {/* Add more routes here if needed */}
       </Routes>
     </BrowserRouter>
