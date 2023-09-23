@@ -8,8 +8,8 @@
   transform: translateY(-2px);
 }
 .container {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    justify-content:space-between;
     flex-wrap: wrap;
     margin: 20px 0px 40px;
     gap: 20px;
@@ -35,4 +35,11 @@
     padding:3px;
 }
 
-
+@media (min-width: 768px) {
+  .container {
+ display: flex;
+ width: 100%;
+ flex-wrap: wrap;
+  
+}
+}

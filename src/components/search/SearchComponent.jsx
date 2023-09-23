@@ -144,7 +144,9 @@ function SearchComponent({ closeSearch }) {
 
   return (
     <div className={styles.searchcomponent}>
-        <RxCross2 className={styles.close} onClick={closeSearch}/>
+      <div className={styles.close}>
+        <RxCross2 onClick={closeSearch} />
+      </div>
       <NewSearch handleSearch={handleSearch} />
       {content}
     </div>
