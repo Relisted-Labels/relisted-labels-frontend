@@ -1,6 +1,7 @@
 import {useState} from "react";
 import styles from "./Newsection.module.css";
 import NewSectionCard from "./NewSectionCard"; 
+import image from './image/listingImg.png'
 const NewSection = () => {
   const [visibleCards, setVisibleCards] = useState(6);
   const showMoreCards = () => {
@@ -9,7 +10,7 @@ const NewSection = () => {
     
  const cards = [
    {
-     productImg: "./image/listingImg.png",
+     productImg: image,
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -17,7 +18,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
    {
-     productImg: "./image/listingImg.png",
+     productImg: image,
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -25,7 +26,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
     {
-     productImg: "./image/listingImg.png",
+     productImg: image,
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -33,7 +34,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
     {
-     productImg: "./image/listingImg.png",
+     productImg: image,
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -41,7 +42,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
    {
-     productImg: "./image/listingImg.png",
+     productImg: image,
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -49,7 +50,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
     {
-     productImg: "./image/listingImg.png",
+     productImg: image,
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -57,7 +58,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
     {
-     productImg: "./image/listingImg.png",
+     productImg: image,
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -65,7 +66,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
       {
-     productImg: "./image/listingImg.png",
+     productImg: image,
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -73,7 +74,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
       {
-     productImg: "./image/listingImg.png",
+     productImg: image,
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -81,7 +82,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
       {
-     productImg: "./image/listingImg.png",
+     productImg: image,
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -89,7 +90,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
    {
-     productImg: "./image/listingImg.png",
+     productImg: image,
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -97,7 +98,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
       {
-     productImg: "./image/listingImg.png",
+     productImg: image,
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -105,7 +106,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
       {
-     productImg: "./image/listingImg.png",
+     productImg: image,
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -113,7 +114,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
       {
-     productImg: "./image/listingImg.png",
+     productImg: image,
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -125,6 +126,7 @@ const NewSection = () => {
   return (
     <div className={styles.Section}>
       <h2>New In</h2>
+      {/* <img src={image} /> */}
       <div className={styles.cardListings}>
         {cards.slice(0, visibleCards).map((card, index) => (
           <NewSectionCard
