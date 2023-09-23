@@ -41,11 +41,14 @@
 
 @media screen and (max-width: 600px) {
     .searchBar input {
+        width: 80%;
         font-size: 18px;
-        flex-basis: 70%;
     }
     .searchBar input:focus {
         border: none;
+    }
+    .searchBar button{
+        width: 20px;
     }
     .searchBar{
         display: flex;
