@@ -3,7 +3,7 @@ import styles from "./Searchcomponent.module.css";
 import NewSearch from "./NewSearch";
 import ItemsList from "../searchresult/Itemslist";
 import image from "./image/listingImg.png";
-import {RxCross2} from 'react-icons/rx'
+import { RxCross2 } from 'react-icons/rx';
 
 function SearchComponent({ closeSearch }) {
   const items = [
