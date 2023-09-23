@@ -26,7 +26,7 @@ return (
         <input type="email" name="email" />
 
         <span className={styles.buttonSpan}>
-          <Button importance="primary" name="Confirm Email" />
+          <Button className={styles.confirmBtn} importance="primary" name="Confirm Email" />
         </span>
       </form>
     </div>

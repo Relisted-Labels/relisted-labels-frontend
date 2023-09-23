@@ -160,5 +160,25 @@
         /* padding-bottom: 3px; */
     }
 
-    .forgotPasswordHeader
+    .forgotPasswordHeader{
+        margin-top: -15px;
+    }
+
+    .authTitle{
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    .authForm input{
+        height: 45px;
+        padding-left: 10px;
+        font-size: 18px;
+    }
+    .authForm label{
+        font-size: 18px;
+    }
+    .confirmBtn{
+        height: 70px;
+        width: 300px;
+    }
 }
