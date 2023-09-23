@@ -24,7 +24,7 @@
     background-color: white;
     z-index: 2;
     width: 100%;
-    min-height: 400%;
+    min-height: 550%;
     height: fit-content;
     transition: 2s ease-out;
 }
@@ -47,7 +47,7 @@
     background-color: white;
     z-index: 2;
     width: 100%;
-     min-height: 400%;
+     min-height: 550%;
     height: fit-content;
    
 }

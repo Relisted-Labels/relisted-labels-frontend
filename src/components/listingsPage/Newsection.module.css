@@ -12,9 +12,10 @@
     
     .cardListings {
         display: flex;
-        width: 500px;
+        width: 350px;
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 10px;
+        
     }
     .itemImage {
         width: 150px;
