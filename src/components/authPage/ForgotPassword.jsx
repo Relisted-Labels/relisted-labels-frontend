@@ -8,20 +8,11 @@ import { MdArrowBackIos } from "react-icons/md"
 const ForgotPassword = () => {
 return (
   <div className={styles.authContainer}>
-    <img
-      src={authImage}
-      className={styles.authImage}
-      alt="Black Model in Black and White"
-    />
-
     <div className={styles.authFormContainer}>
       <form className={styles.authForm}>
         <div className={styles.link}>
-          <div>
-            <MdArrowBackIos />
-          </div>
-          <Link to="/auth">
-            <p className={styles.linkStyle}>Forgot password</p>
+          <Link to="/auth" className={styles.linkTo}>
+          <span className={styles.linkCont}><MdArrowBackIos className={styles.authIcon}/><span className={styles.linkStyle}>Forgot password</span></span>  
           </Link>
         </div>
 
