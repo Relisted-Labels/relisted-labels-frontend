@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from './Item.module.css'
-import Blazer from '../../assets/Blazer.avif'
+import Blazer from '../../assets/jumpsuit.png'
 
 const Item = () => {
     

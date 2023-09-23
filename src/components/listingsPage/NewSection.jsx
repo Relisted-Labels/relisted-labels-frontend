@@ -9,7 +9,7 @@ const NewSection = () => {
     
  const cards = [
    {
-     imageSrc: "../../assets/Blazer.png",
+     productImg: "./image/listingImg.png",
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -17,7 +17,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
    {
-     imageSrc: "../../assets/Blazer.png",
+     productImg: "./image/listingImg.png",
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -25,7 +25,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
     {
-     imageSrc: "../../assets/Blazer.png",
+     productImg: "./image/listingImg.png",
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -33,7 +33,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
     {
-     imageSrc: "../../assets/Blazer.png",
+     productImg: "./image/listingImg.png",
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -41,7 +41,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
    {
-     imageSrc: "../../assets/Blazer.png",
+     productImg: "./image/listingImg.png",
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -49,7 +49,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
     {
-     imageSrc: "../../assets/Blazer.png",
+     productImg: "./image/listingImg.png",
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -57,7 +57,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
     {
-     imageSrc: "../../assets/Blazer.png",
+     productImg: "./image/listingImg.png",
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -65,7 +65,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
       {
-     imageSrc: "../../assets/Blazer.png",
+     productImg: "./image/listingImg.png",
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -73,7 +73,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
       {
-     imageSrc: "../../assets/Blazer.png",
+     productImg: "./image/listingImg.png",
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -81,7 +81,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
       {
-     imageSrc: "../../assets/Blazer.png",
+     productImg: "./image/listingImg.png",
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -89,7 +89,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
    {
-     imageSrc: "../../assets/Blazer.png",
+     productImg: "./image/listingImg.png",
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -97,7 +97,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
       {
-     imageSrc: "../../assets/Blazer.png",
+     productImg: "./image/listingImg.png",
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -105,7 +105,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
       {
-     imageSrc: "../../assets/Blazer.png",
+     productImg: "./image/listingImg.png",
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -113,7 +113,7 @@ const NewSection = () => {
      discount: "PRP E90",
    },
       {
-     imageSrc: "../../assets/Blazer.png",
+     productImg: "./image/listingImg.png",
      text: "Dress, UK 12",
      altText: "Dress, UK 12",
      itemName: "Glamorous",
@@ -129,7 +129,7 @@ const NewSection = () => {
         {cards.slice(0, visibleCards).map((card, index) => (
           <NewSectionCard
             key={index} 
-            imageSrc={card.imageSrc}
+            productImg={card.productImg}
             altText={card.altText}
             text={card.text}
             discount={card.discount}
