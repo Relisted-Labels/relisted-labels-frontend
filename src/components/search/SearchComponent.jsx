@@ -3,6 +3,8 @@ import styles from "./Searchcomponent.module.css";
 import NewSearch from "./NewSearch";
 import ItemsList from "../searchresult/Itemslist";
 import image from "./image/listingImg.png";
+import {RxCross2} from 'react-icons/rx'
+
 function SearchComponent({ closeSearch }) {
   const items = [
     {
@@ -142,9 +144,7 @@ function SearchComponent({ closeSearch }) {
 
   return (
     <div className={styles.searchcomponent}>
-      <h2 className={styles.close} onClick={closeSearch}>
-        X
-      </h2>
+        <RxCross2 className={styles.close} onClick={closeSearch}/>
       <NewSearch handleSearch={handleSearch} />
       {content}
     </div>
