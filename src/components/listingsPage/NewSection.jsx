@@ -142,7 +142,10 @@ const NewSection = () => {
        
       </div>
         {visibleCards < cards.length && (
-        <button className={styles.showMoreButton} onClick={showMoreCards}>Show More</button>
+          <div className={styles.btnCont}>
+            <button className={styles.showMoreButton} onClick={showMoreCards}>Show More</button>
+          </div>
+
       )}
     </div>
   );
