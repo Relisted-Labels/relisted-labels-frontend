@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 
 import authImage from "../../assets/authImage_desktop.jpeg";
@@ -352,6 +352,11 @@ const AuthPage = () => {
               value={loginCredentials.password}
               onChange={handleLoginChange}
             />
+            <p className={styles.linkContain}>
+              <Link className={styles.linkStyle} to="/forgotpassword">
+                Forgot your password?
+              </Link>
+            </p>
             <span className={styles.buttonSpan}>
               <Button
                 importance="primary"
