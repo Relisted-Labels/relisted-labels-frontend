@@ -20,6 +20,7 @@
         width: 150px;
         border-radius: 10px;
         padding-bottom: 10px;
+        margin-top: 20px;
     }
     
     .itemName {
@@ -114,6 +115,8 @@
  .itemImage {
         width: 125px;
         border-radius: 5px;
+        margin-top: 20px;
+
     }
     .showMoreButton{   
         width: 180px;
@@ -129,5 +132,14 @@
     .text{
         padding:2px;
     }
+    .cardListings {
+        gap: 5px;
+    }
 
+}
+
+@media (max-width: 312px){
+ .itemImage {
+        width: 100px;
+    }
 }
