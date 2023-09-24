@@ -9,10 +9,11 @@
 }
 .container {
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
+    width: 400px;
     flex-wrap: wrap;
-    margin: 20px 0px 40px;
-    gap: 20px;
+    /* margin: 20px 0px 40px; */
+    gap: 10px;
 }
 .itemImage {
     width: 150px;

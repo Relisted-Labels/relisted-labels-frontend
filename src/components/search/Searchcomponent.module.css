@@ -17,16 +17,22 @@
     display:flex;
     justify-content:center;
 }
-.searchcomponent {
-    position: absolute;
+ .searchcomponent {
+    max-height: 100vh;
+    overflow-y: auto;
+}
+.searchcomponent::-webkit-scrollbar{
+    display:  none;
+}
+
+.searchcomponentcontainer {
+    position: fixed;
     top: 0;
     right: 0;
     background-color: white;
     z-index: 2;
     width: 100%;
-    min-height: 600%;
-    height: fit-content;
-    transition: 2s ease-out;
+    height: 100%;
 }
 .close{
     display: flex;
@@ -41,15 +47,21 @@
 
 @media screen and (min-width: 1200px) {
   .searchcomponent {
-    position: absolute;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+.searchcomponent::-webkit-scrollbar{
+    display:  none;
+}
+
+.searchcomponentcontainer {
+    position: fixed;
     top: 0;
     right: 0;
     background-color: white;
     z-index: 2;
     width: 100%;
-     min-height: 600%;
-    height: fit-content;
-   
+    height: 100%;
 }
  
 }
