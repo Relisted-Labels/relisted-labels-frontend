@@ -112,7 +112,8 @@
 
 @media (max-width: 371px){
  .itemImage {
-        width: 100px;
+        width: 125px;
+        border-radius: 5px;
     }
     .showMoreButton{   
         width: 180px;

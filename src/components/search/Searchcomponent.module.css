@@ -24,6 +24,9 @@
 .searchcomponent::-webkit-scrollbar{
     display:  none;
 }
+.content{
+    padding-bottom:50px;
+}
 
 .searchcomponentcontainer {
     position: fixed;
