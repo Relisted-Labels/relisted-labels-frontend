@@ -17,8 +17,8 @@
         gap: 10px;
     }
     .itemImage {
-        width: 150px;
-        border-radius: 10px;
+        width: 170px;
+        /* border-radius: 10px; */
         padding-bottom: 10px;
         margin-top: 20px;
     }
@@ -71,11 +71,11 @@
         display: flex;
         width: 100%;
         flex-wrap: wrap;
-        gap: 50px;
+        gap: 10px;
     }
     .itemImage {
-        width: 150px;
-        border-radius: 10px;
+        width: 180px;
+        /* border-radius: 10px; */
         padding-bottom: 10px;
     }
     
@@ -113,8 +113,8 @@
 
 @media (max-width: 371px){
  .itemImage {
-        width: 125px;
-        border-radius: 5px;
+        width: 130px;
+        /* border-radius: 5px; */
         margin-top: 20px;
 
     }
@@ -132,14 +132,12 @@
     .text{
         padding:2px;
     }
-    .cardListings {
-        gap: 5px;
-    }
+   
 
 }
 
-@media (max-width: 312px){
+@media (max-width: 327px){
  .itemImage {
-        width: 100px;
+        width: 110px;
     }
 }
