@@ -10,10 +10,7 @@
 .container {
     display: flex;
     justify-content:space-between;
-    width: 400px;
     flex-wrap: wrap;
-    /* margin: 20px 0px 40px; */
-    gap: 10px;
 }
 .itemImage {
     width: 150px;
@@ -43,4 +40,18 @@
  flex-wrap: wrap;
   
 }
+}
+
+@media (max-width: 371px){
+  .container {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.itemImage {
+    width: 120px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
 }

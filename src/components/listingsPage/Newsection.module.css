@@ -109,3 +109,24 @@
         font-size: 16px;
     }
 }
+
+@media (max-width: 371px){
+ .itemImage {
+        width: 100px;
+    }
+    .showMoreButton{   
+        width: 180px;
+        height: 40px;
+    }
+    .itemName {
+        font-size: 15px;
+        padding:2px;
+    }
+    .discount {
+        padding:2px;
+    }
+    .text{
+        padding:2px;
+    }
+
+}
