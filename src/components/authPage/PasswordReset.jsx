@@ -32,7 +32,6 @@ const PasswordReset = () => {
           <input type="password" name="password" />
 
           <span className={styles.buttonSpan}>
-            <button type="submit"></button>
             <Button importance="primary" name="Reset Password" />
           </span>
         </form>
