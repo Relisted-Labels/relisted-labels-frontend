@@ -12,7 +12,10 @@ return (
       <form className={styles.authForm}>
         <div className={styles.link}>
           <Link to="/auth" className={styles.linkTo}>
-          <span className={styles.linkCont}><MdArrowBackIos className={styles.authIcon}/><span className={styles.linkStyle}>Forgot password</span></span>  
+            <span className={styles.linkCont}>
+              <MdArrowBackIos className={styles.authIcon} />
+              <span className={styles.linkStyle}>Forgot password</span>
+            </span>
           </Link>
         </div>
 
@@ -26,7 +29,7 @@ return (
         <input type="email" name="email" />
 
         <span className={styles.buttonSpan}>
-          <button type="submit">Confirm Email</button>
+          <Button importance="primary" name="Confirm Email" />
         </span>
       </form>
     </div>
