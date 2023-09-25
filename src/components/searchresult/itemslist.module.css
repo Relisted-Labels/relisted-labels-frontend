@@ -11,10 +11,11 @@
     display: flex;
     justify-content:space-between;
     flex-wrap: wrap;
+    
 }
 .itemImage {
     width: 150px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding-bottom: 10px;
 }
 
@@ -49,8 +50,18 @@
     flex-wrap: wrap;
 }
 .itemImage {
-    width: 120px;
-    border-radius: 10px;
+    width: 150px;
+    /* border-radius: 10px; */
+    padding-bottom: 10px;
+}
+
+}
+
+
+@media (max-width: 365px){
+.itemImage {
+    width: 130px;
+    /* border-radius: 10px; */
     padding-bottom: 10px;
 }
 

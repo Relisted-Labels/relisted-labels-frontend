@@ -1,5 +1,5 @@
 import React from "react";
-import authImage from "../../assets/authImage_desktop.jpeg";
+// import authImage from "../../assets/authImage_desktop.jpeg";
 import { Link } from "react-router-dom";
 import styles from "./AuthPage.module.css";
 import Button from "../reusable/Button";
