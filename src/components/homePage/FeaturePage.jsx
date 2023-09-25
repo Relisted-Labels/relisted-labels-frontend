@@ -21,11 +21,15 @@ const FeaturePage = () => {
   ];
   return (
     <div className={style.container}>
-      <h1>Featured Products</h1>
+      <div className={style.description}>
+        <h1>BUY AND RENT YOUR CLOTHES AT AN AFFORDABLE PRICE</h1>
+        <p>Shop now! do not miss this offer</p>
+      </div>
 
-      <div>
+
+      <div className={style.feature}>
       {featuredProducts.map((feature, index) => (
-        <img src={feature.productImg} alt="" key={index} />
+        <img src={feature.productImg} alt="" key={index} className={style.image}/>
       ))}
       </div>
     </div>

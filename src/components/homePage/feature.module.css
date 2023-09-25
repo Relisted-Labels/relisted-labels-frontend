@@ -1,0 +1,19 @@
+.feature img{
+    width: 230px;
+    /* margin-left: 10px; */
+}
+.container{
+    margin-top: 90px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.description{
+    width: 95%;
+}
+.feature {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
