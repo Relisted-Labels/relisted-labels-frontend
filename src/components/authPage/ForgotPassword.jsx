@@ -14,7 +14,7 @@ return (
           <Link to="/auth" className={styles.linkTo}>
             <span className={styles.linkCont}>
               <MdArrowBackIos className={styles.authIcon} />
-              <span className={styles.linkStyle}>Forgot password</span>
+              {/* <span className={styles.linkStyle}>Forgot password</span> */}
             </span>
           </Link>
         </div>
