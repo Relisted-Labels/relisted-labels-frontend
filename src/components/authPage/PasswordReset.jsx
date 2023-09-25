@@ -1,11 +1,58 @@
-import React from "react";
+import React, { useState } from "react";
 // import authImage from "../../assets/authImage_desktop.jpeg";
 import { Link } from "react-router-dom";
 import styles from "./AuthPage.module.css";
 import Button from "../reusable/Button";
 import { MdArrowBackIos } from "react-icons/md";
+import { useParams } from "react-router-dom";
 
 const PasswordReset = () => {
+     const { token } = useParams();
+     const [password, setPassword] = useState("");
+     const [message, setMessage] = useState("");
+   
+
+
+
+   const handlePasswordChange = (e) => {
+     setPassword(e.target.value);
+   };
+
+   const handleSubmit = async (e) => {
+     e.preventDefault();
+
+     // Send a request to the password reset route with 'token' and 'password'.
+     try {
+       const response = await fetch(
+         "https://relisted-labels-dev.onrender.com/auth/reset-password",
+         {
+           method: "POST",
+           headers: {
+             "Content-Type": "application/json",
+           },
+           body: JSON.stringify({ token, password }),
+         }
+       );
+
+       if (response.status === 200) {
+         // Password reset successful
+         setMessage(
+           "Password reset successful. You can now log in with your new password."
+         );
+        console.log(response.data);
+
+       } else {
+         const data = await response.json();
+         setMessage(data.error || "Password reset failed.");
+        console.log(response.data);
+
+       }
+     } catch (error) {
+       console.error("An error occurred:", error);
+       setMessage("An error occurred while processing your request.");
+     }
+   };
+
   return (
     <div className={styles.authContainer}>
       <div className={styles.authFormContainer}>
@@ -24,16 +71,29 @@ const PasswordReset = () => {
           </p>
           <label htmlFor="password">New Password</label>
           <br />
-          <input type="password" name="password" />
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
           <br />
 
           <label htmlFor="password">Confirm Password</label>
           <br />
-          <input type="password" name="password" />
+          <input
+            type="password"
+            value={password}
+            onChange={handlePasswordChange}
+          />
 
           <span className={styles.buttonSpan}>
-            <Button importance="primary" name="Reset Password" />
+            <Button
+              onClick={handleSubmit}
+              importance="primary"
+              name="Reset Password"
+            />
           </span>
+          {message && <div>{message}</div>}
         </form>
       </div>
     </div>
