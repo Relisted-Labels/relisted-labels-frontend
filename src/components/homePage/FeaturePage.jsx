@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './Feature.module.css'
-import image from '../../assets/jumpsuit.png'
+import image from '../../assets/featureProduct.png'
+import group from '../../assets/Group-feature.png'
 const FeaturePage = () => {
     const featuredProducts = [
       {
@@ -20,6 +21,7 @@ const FeaturePage = () => {
     },
   ];
   return (
+    <>
     <div className={style.container}>
       <div className={style.description}>
         <h1>BUY AND RENT YOUR CLOTHES AT AN AFFORDABLE PRICE</h1>
@@ -33,6 +35,13 @@ const FeaturePage = () => {
       ))}
       </div>
     </div>
+
+    <div className={style.groupCont}>
+      <h1>BUY AND RENT YOUR CLOTHES AT AN AFFORDABLE PRICE</h1>
+
+        <img src={group} alt="" />
+    </div>
+    </>
   )
 }
 

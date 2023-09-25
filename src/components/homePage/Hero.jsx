@@ -1,5 +1,5 @@
 import React from "react";
-import HomePage from "../../assets/web-homepage.png";
+import HomePage from "../../assets/hero-image.jpg";
 import Styles from "./Hero.module.css";
 import Button from "../reusable/Button";
 import { useNavigate } from "react-router-dom";

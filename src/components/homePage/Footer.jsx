@@ -9,8 +9,8 @@ const Footer = () => {
         <div className={styles.firstcontainer}>
           <div>
             <IoIosArrowUp />
-          </div>
           <p>BACK TO TOP</p>
+          </div>
         </div>
         <div className={styles.secondcontainer}>
           <p>CHAT WITH US</p>
