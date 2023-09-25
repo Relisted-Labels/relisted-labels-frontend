@@ -14,11 +14,11 @@ export const Hero = () => {
     <>
       <div className={Styles.home}>
         <div className={Styles.container}>
-          <div className={Styles.navbar}>
+          <div className={Styles.description}>
+            <div className={Styles.navbar}>
             <h3>RelistedLabels</h3>
           </div>
-          <div>
-            <h2>Join The World's Largest Shared Wardrobe</h2>
+            <h1>Join The World's Largest Shared Wardrobe</h1>
             <p>Buy, Sell and Rent Your Favourite Cloths</p>
 
             <Button
