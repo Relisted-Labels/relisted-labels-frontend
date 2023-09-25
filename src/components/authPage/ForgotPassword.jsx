@@ -1,6 +1,6 @@
-import {  useState } from "react"
+import { React, useState } from "react"
 // import authImage from "../../assets/authImage_desktop.jpeg";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "./AuthPage.module.css";
 import Button from "../reusable/Button";
 import { MdArrowBackIos } from "react-icons/md"
@@ -58,6 +58,7 @@ return (
   <div className={styles.authContainer}>
     <div className={styles.authFormContainer}>
       <form className={styles.authForm}>
+
         <div className={styles.link}>
           <Link to="/auth" className={styles.linkTo}>
             <span className={styles.linkCont}>
