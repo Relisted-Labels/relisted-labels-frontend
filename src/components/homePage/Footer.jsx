@@ -4,8 +4,7 @@ import styles from "./Footer.module.css";
 
 const Footer = () => {
   const handleScrollToTop = () => {
-
-    window.scrollTo({ top: 0, behavior: "smooth" }); // You can use 'smooth' for smooth scrolling
+    window.scrollTo({ top: 0, behavior: "smooth" }); 
   };
 
     return (
