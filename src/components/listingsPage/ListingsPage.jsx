@@ -26,7 +26,7 @@ const ListingsPage = () => {
             setUserName(userInfo.user.username)
             return userInfo;
         } else {
-            // navigate('/auth');
+            navigate('/auth');
         }
     }
 
