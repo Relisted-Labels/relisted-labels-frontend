@@ -7,7 +7,6 @@ import Banner from "./Banner";
 import Navbar from "../reusable/Navbar";
 import NewSection from "./NewSection";
 import SearchIcon from "../search/SearchIcon";
-import Footer from "../homePage/Footer";
 
 
 const ListingsPage = () => {
@@ -51,7 +50,6 @@ const ListingsPage = () => {
             <CategoryListings/>
             <NewSection />
             <Navbar />
-            <Footer />
         </div>
     )
 }
