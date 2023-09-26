@@ -5,6 +5,7 @@ import HomePage from './components/homePage/HomePage'; // Adjust the path as nee
 import AuthPage from './components/authPage/AuthPage';
 import ForgotPassword from './components/authPage/ForgotPassword';
 import PasswordReset from './components/authPage/PasswordReset';
+import EmailVerification from './components/authPage/EmailVerification';
 import ListingsPage from './components/listingsPage/ListingsPage';
 import ItemView from './components/itemViewing/ItemViewing'
 
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/viewing" element={<ItemView/>} />
         <Route exact path="/forgotpassword" element={<ForgotPassword />} />
         <Route exact path="/passwordreset" element={<PasswordReset />} />
+        <Route exact path="/emailverification" element={<EmailVerification />} />
         {/* Add more routes here if needed */}
       </Routes>
     </BrowserRouter>
