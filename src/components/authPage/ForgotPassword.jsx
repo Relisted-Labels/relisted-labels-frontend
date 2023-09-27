@@ -10,7 +10,7 @@ import { MdArrowBackIos } from "react-icons/md"
 const ForgotPassword = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-     const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   // const navigate = useNavigate();
 
@@ -74,6 +74,7 @@ return (
           Please enter your email to receive a confirmation code to reset your
           password
         </p>
+        <div>{message && <div>{message}</div>}</div>
         <label htmlFor="password">Email Address</label>
         <br />
         <input type="email" value={email} onChange={handleEmailChange} />
@@ -85,7 +86,7 @@ return (
             name={loading ? <Spinner /> : "Confirm Email"}
           />
         </span>
-        {message && <div>{message}</div>}
+      
       </form>
     </div>
   </div>

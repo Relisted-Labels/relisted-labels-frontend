@@ -74,6 +74,10 @@ const PasswordReset = () => {
           <p className={styles.authTitle}>
             Your new password must be unique from those previously used
           </p>
+          <div>
+          {message && <div>{message}</div>}
+          </div>
+
           <label htmlFor="password">New Password</label>
           <br />
           <input
@@ -98,7 +102,6 @@ const PasswordReset = () => {
               name={loading ? <Spinner /> : "Reset Password"}
             />
           </span>
-          {message && <div>{message}</div>}
         </form>
       </div>
     </div>
