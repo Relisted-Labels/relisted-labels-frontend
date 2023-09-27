@@ -15,24 +15,29 @@ const ListingsPage = () => {
     const [email, setEmail] = useState('');
     const navigate = useNavigate();
 
-    const token = localStorage.getItem("userAuthToken");
+   const token = localStorage.getItem("userAuthToken");
 
-    const getUserInfoFromToken = () => {
-        if (token) {
-            const userInfo = jwtDecode(token);
-            console.log(userInfo);
-            setUserId(userInfo.user.id);
-            setEmail(userInfo.user.email);
-            setUserName(userInfo.user.username)
-            return userInfo;
-        } else {
-            navigate('/auth');
-        }
-    }
+   const getUserInfoFromToken = () => {
+     try {
+       if (token) {
+         const userInfo = jwtDecode(token);
+         console.log(userInfo);
+         setUserId(userInfo.user.id);
+         setEmail(userInfo.user.email);
+         setUserName(userInfo.user.username);
+         return userInfo;
+       } else {
+         navigate("/auth");
+       }
+     } catch (error) {
+       console.error("Error decoding token:", error);
+       navigate("/auth"); 
+     }
+   };
 
-    useEffect(() => {
-        getUserInfoFromToken()
-    }, []);
+   useEffect(() => {
+     getUserInfoFromToken();
+   }, []);
 
     const getHomeListings = (id) => {
         //This will take the user's id, and then make a call to the backend API. 
