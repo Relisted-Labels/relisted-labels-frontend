@@ -89,10 +89,11 @@ const AuthPage = () => {
         loginCredentials
       );
       if (response.status === 200) {
-        const token = response.data.token;
+        const token = response.data.accessToken;
         localStorage.setItem("userAuthToken", token);
         setIsAuthenticated(true);
         navigate("/listings");
+       
       } else {
         setLoginError(
           "An unknown error occured. Please validate your details and try again."
