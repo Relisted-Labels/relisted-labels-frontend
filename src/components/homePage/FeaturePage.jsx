@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './Feature.module.css'
+import style from './feature.module.css'
 import image from '../../assets/featureProduct.png'
 import group from '../../assets/Group-feature.png'
 const FeaturePage = () => {
@@ -22,7 +22,7 @@ const FeaturePage = () => {
   ];
   return (
     <>
-    
+
     <div className={style.container}>
       <div className={style.description}>
         <h1>BUY AND RENT YOUR CLOTHES AT AN AFFORDABLE PRICE</h1>
