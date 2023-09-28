@@ -1,12 +1,13 @@
 import jwtDecode from "jwt-decode"
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import CategoryListings from "./CategoryListings";
+// import CategoryListings from "./CategoryListings";
 import styles from './ListingsPage.module.css'
 import Banner from "./Banner";
 import Navbar from "../reusable/Navbar";
 // import NewSection from "./NewSection";
 import SearchIcon from "../search/SearchIcon";
+import Category from "./Category";
 
 
 const ListingsPage = () => {
@@ -54,7 +55,7 @@ const ListingsPage = () => {
 
         <div id="HomeListings" className={styles.HomeListings}>
           <SearchIcon />
-          <CategoryListings />
+          <Category />
           {/* <NewSection /> */}
           <Navbar />
         </div>

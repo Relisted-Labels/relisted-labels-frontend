@@ -5,7 +5,7 @@ import Trend from '../../assets/trend.png'
 import Trendd from '../../assets/trendd.png'
 import Trenddd from '../../assets/trenddd.png'
 
-const Item = () => {
+const TrendingItem = () => {
 
     const cards = [
       {
@@ -93,4 +93,4 @@ const Item = () => {
     );
 }
 
-export default Item;
+export default TrendingItem;
