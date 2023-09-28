@@ -7,8 +7,11 @@
     font-weight: 600;
     margin-bottom: 15px;
 }
+.container{
+    margin-bottom: 90px;
+}
 
-.itemListings {
+/* .itemListings {
     display: flex;
     gap: 30px;
     overflow: scroll;
@@ -16,4 +19,4 @@
 
 .itemListings::-webkit-scrollbar {
     display: none;
-}
+} */
