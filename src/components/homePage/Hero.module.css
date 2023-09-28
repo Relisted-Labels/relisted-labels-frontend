@@ -32,6 +32,14 @@
     margin-top: 5px;
 }
 
+.home .container .description a{
+    text-decoration: underline;
+    color: white;
+    margin-left: 20px;
+    background: #000;
+    border-radius: 10px;
+}
+
 .home .container img{
     width: 40%;
     height: 550px;
@@ -74,4 +82,10 @@
         padding: 10px;
         flex-wrap: wrap;
     }
+    .home .container .description a{
+    text-decoration: underline;
+    color: white;
+    padding: 10px 15px;
+    margin-left: 20px;
+}
 }

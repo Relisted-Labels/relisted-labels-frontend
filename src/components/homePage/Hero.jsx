@@ -21,11 +21,8 @@ export const Hero = () => {
             <h1>Join The World's Largest Shared Wardrobe</h1>
             <p>Buy, Sell and Rent Your Favourite Cloths</p>
 
-            <Button
-              name="Get Started"
-              importance="primary"
-              onClick={navigateToAuth}
-            />
+
+            <a onClick={navigateToAuth}>Get Started</a>
           </div>
 
           <img src={HomePage} alt="" />
