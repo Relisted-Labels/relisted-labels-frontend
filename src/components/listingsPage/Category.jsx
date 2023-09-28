@@ -13,6 +13,8 @@ const Category = (props) => {
                 <Item />
                 <Item />
                 <Item />
+                
+               
             </div>
         </div>
     )
