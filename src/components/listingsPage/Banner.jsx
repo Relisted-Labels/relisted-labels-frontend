@@ -7,10 +7,10 @@ const ListHero = () => {
     // styling for the top image category
     <div className={styles.slide}>
       <div>
-        No Image selected.
+        <h4>RelistedLabels</h4>
       </div>
     </div>
-  )
+  );
 }
 
 export default ListHero

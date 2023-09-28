@@ -5,14 +5,18 @@
         margin-top: -10px;
         height: 120px;
         width: 100%;
-        border: 1px solid #000;
         margin-bottom: 30px;
-        border-radius: 20px;
+        background: linear-gradient(to bottom, #ECCDCB, #B0A3CE);
     }
     .slide div{
         height: 100%;
         width: 100%;
         display: grid;
         place-items: center;
+    }
+    .slide h4{
+        color: black;
+        font-size: 40px;
+        font-weight: 400;
     }
 }
