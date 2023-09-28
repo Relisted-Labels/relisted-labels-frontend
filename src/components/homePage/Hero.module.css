@@ -30,6 +30,7 @@
 .home .container .description p{
     margin-left: 19px;
     margin-top: 5px;
+    margin-bottom: 30px;
 }
 
 .home .container .description a{
@@ -37,7 +38,10 @@
     color: white;
     margin-left: 20px;
     background: #000;
-    border-radius: 10px;
+    border-radius: 20px;
+    padding: 13px 23px;
+    /* margin-bottom: -30px; */
+    text-decoration: none;
 }
 
 .home .container img{
@@ -87,5 +91,6 @@
     color: white;
     padding: 10px 15px;
     margin-left: 20px;
+    background-color: transparent;
 }
 }
