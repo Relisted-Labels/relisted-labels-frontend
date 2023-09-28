@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './feature.module.css'
+import style from './Feature.module.css'
 import image from '../../assets/featureProduct.png'
 import group from '../../assets/Group-feature.png'
 const FeaturePage = () => {
