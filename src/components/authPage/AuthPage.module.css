@@ -86,21 +86,15 @@
 .OauthButton {
     width: 100%;
     display: flex;
-    column-gap: 15px;
-    background-color: white;
-    color: black;
-    align-items: center;
+    background: transparent;
     justify-content: center;
-    border: 1px solid black;
-    border-radius: 11px;
-    height: 45px;
-    margin-bottom: 20px;
-    cursor: pointer;
+    align-items: center;
+    gap: 15px;
 }
-
-.OauthButton span {
-    font-size: 22.5px;
-}
+.OauthButton svg{
+    height: 40px;
+    width: 40px;
+ }
 
 @media screen and (max-width: 768px) {
     .authImage {

@@ -1,8 +1,8 @@
 .button{
-    width: 120px;
+    width: 50%;
     height: 45px;
     align-self: center;
-    border-radius: 10px;
+    border-radius: 100%;
     box-shadow: 4px 4px 6px rgba(26, 26, 26, 0.486);
     cursor: pointer;
     margin-left: 15px;
