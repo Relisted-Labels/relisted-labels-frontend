@@ -9,10 +9,10 @@ const Category = (props) => {
             <h2>{props.name}</h2>
             <div className={styles.itemListings}>
                 <Item />
+                {/* <Item />
                 <Item />
                 <Item />
-                <Item />
-                <Item />
+                <Item /> */}
                 
                
             </div>

@@ -6,8 +6,14 @@
     max-width: 400px;
     flex-direction: column;
 }
-.container{
-    margin-bottom: 30px;
+.container {
+    display: flex;
+    gap: 30px;
+    overflow: scroll;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
 }
 .itemImage {
     width: 170px;

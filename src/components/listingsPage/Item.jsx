@@ -1,23 +1,81 @@
 import { useState, useEffect } from "react";
 import styles from './Item.module.css'
-import Blazer from '../../assets/jumpsuit.png'
+import Blazer from '../../assets/Blazer.png'
+import Trend from '../../assets/trend.png'
+import Trendd from '../../assets/trendd.png'
+import Trenddd from '../../assets/trenddd.png'
 
 const Item = () => {
 
     const cards = [
       {
-        productImg: Blazer,
+        productImg: Trend,
         text: "Dress, UK 12",
         altText: "Dress, UK 12",
-        itemName: "Glamorous",
+        itemName: "Realisation",
         price: "Rent from E21",
         discount: "PRP E90",
       },
-     
+      {
+        productImg: Trendd,
+        text: "Dress, UK 12",
+        altText: "Dress, UK 12",
+        itemName: "Realisation",
+        price: "Rent from E21",
+        discount: "PRP E90",
+      },
+      {
+        productImg: Trenddd,
+        text: "Dress, UK 12",
+        altText: "Dress, UK 12",
+        itemName: "Realisation",
+        price: "Rent from E21",
+        discount: "PRP E90",
+      },
+      {
+        productImg: Blazer,
+        text: "Dress, UK 12",
+        altText: "Dress, UK 12",
+        itemName: "Realisation",
+        price: "Rent from E21",
+        discount: "PRP E90",
+      },
+      {
+        productImg: Trend,
+        text: "Dress, UK 12",
+        altText: "Dress, UK 12",
+        itemName: "Realisation",
+        price: "Rent from E21",
+        discount: "PRP E90",
+      },
+      {
+        productImg: Trendd,
+        text: "Dress, UK 12",
+        altText: "Dress, UK 12",
+        itemName: "Realisation",
+        price: "Rent from E21",
+        discount: "PRP E90",
+      },
+      {
+        productImg: Trenddd,
+        text: "Dress, UK 12",
+        altText: "Dress, UK 12",
+        itemName: "Realisation",
+        price: "Rent from E21",
+        discount: "PRP E90",
+      },
+      {
+        productImg: Blazer,
+        text: "Dress, UK 12",
+        altText: "Dress, UK 12",
+        itemName: "Realisation",
+        price: "Rent from E21",
+        discount: "PRP E90",
+      },
     ];
     
     return (
-      <div>
+      <div className={styles.container}>
         {cards.map((card, index) => (
           <div key={index}>
             <img
