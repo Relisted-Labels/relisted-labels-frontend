@@ -6,16 +6,29 @@
     max-width: 400px;
     flex-direction: column;
 }
-
+.container{
+    margin-bottom: 30px;
+}
 .itemImage {
-    width: 180px;
+    width: 170px;
     /* height: 200px; */
     
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding-bottom: 10px;
 }
 
 .itemName {
-    font-size: 18px;
-}
+        font-size: 18px;
+        color: #000000;
+        padding:3px;
+    }
+    .discount {
+        text-decoration: line-through;
+        color: grey;
+        padding:3px;
+    }
+    .text{
+        color: grey;
+        padding:3px;
+    }
 
