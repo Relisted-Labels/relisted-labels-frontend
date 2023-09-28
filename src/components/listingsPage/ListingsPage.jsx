@@ -5,7 +5,7 @@ import CategoryListings from "./CategoryListings";
 import styles from './ListingsPage.module.css'
 import Banner from "./Banner";
 import Navbar from "../reusable/Navbar";
-import NewSection from "./NewSection";
+// import NewSection from "./NewSection";
 import SearchIcon from "../search/SearchIcon";
 
 
@@ -49,14 +49,17 @@ const ListingsPage = () => {
 
 
     return (
+      <div>
+        <Banner />
+
         <div id="HomeListings" className={styles.HomeListings}>
-            <SearchIcon />
-            <Banner />
-            <CategoryListings/>
-            <NewSection />
-            <Navbar />
+          <SearchIcon />
+          <CategoryListings />
+          {/* <NewSection /> */}
+          <Navbar />
         </div>
-    )
+      </div>
+    );
 }
 
 export default ListingsPage; 
