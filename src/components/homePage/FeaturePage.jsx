@@ -22,6 +22,7 @@ const FeaturePage = () => {
   ];
   return (
     <>
+    
     <div className={style.container}>
       <div className={style.description}>
         <h1>BUY AND RENT YOUR CLOTHES AT AN AFFORDABLE PRICE</h1>
