@@ -1,23 +1,33 @@
 .button{
-    width: 50%;
+    width: 60%;
     height: 45px;
     align-self: center;
-    border-radius: 100%;
-    box-shadow: 4px 4px 6px rgba(26, 26, 26, 0.486);
+    border-radius: 80px;
     cursor: pointer;
-    margin-left: 15px;
-    margin-top: 17px;
+    margin-top: 10px;
+    font-size: 18px;
+    transition: .3s ease;
 }
 
 .primary {
-    background-color: white;
+    background-color: transparent;
     color: black;
-     border-radius: 10px;
-    border: 1px solid #B0A3CE;
+    border-radius: 80px;
+    border: 2px solid #B0A3CE;
 }
 
 .secondary {
-    background-color: white;
+    background-color: transparent;
     color: black;
-    border: 1px solid black;
+    border: 2px solid black;
+}
+
+.primary:hover{
+    background-color: #B0A3CE;
+    color: #fff;
+}
+
+.secondary :hover{
+    color: #fff;
+    background-color: #000;
 }
