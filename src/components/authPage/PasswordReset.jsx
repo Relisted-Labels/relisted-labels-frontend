@@ -43,7 +43,7 @@ const PasswordReset = () => {
            setMessage(
              "Password reset successful. You can now log in with your new password."
            );
-           console.log(response.data);
+           console.log(response);
          } else {
            const data = await response.json();
            setMessage(data.error || "Password reset failed.");

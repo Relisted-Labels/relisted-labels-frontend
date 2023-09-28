@@ -39,7 +39,7 @@ const ForgotPassword = () => {
 
         if (response.status === 200) {
           setMessage("Password reset email sent. Check your inbox.");
-          console.log(response.data);
+          console.log(response);
         } else {
           const data = await response.json();
           setMessage(data.error || "Password reset request failed.");
