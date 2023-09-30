@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import styles from './ListingsPage.module.css'
 import Banner from "./Banner";
 import Navbar from "../reusable/Navbar";
+import Header from './Header'
+import NewCategory from './NewCategory';
 // import NewSection from "./NewSection";
 import SearchIcon from "../search/SearchIcon";
 import Category from "./Category";
@@ -17,15 +19,16 @@ const ListingsPage = () => {
     const navigate = useNavigate();
 
    const token = localStorage.getItem("userAuthToken");
-
+   const storedData = localStorage.getItem("userData");
+   const userData = JSON.parse(storedData); 
    const getUserInfoFromToken = () => {
      try {
        if (token) {
-         const userInfo = jwtDecode(token);
+         const userInfo = token;
          console.log(userInfo);
-         setUserId(userInfo.user.id);
-         setEmail(userInfo.user.email);
-         setUserName(userInfo.user.username);
+         setUserId(userData.userId);
+         setEmail(userData.email);
+         setUserName(userData.username);
          return userInfo;
        } else {
          navigate("/auth");
@@ -51,14 +54,11 @@ const ListingsPage = () => {
 
     return (
       <div>
-        <Banner />
-
-        <div id="HomeListings" className={styles.HomeListings}>
-          <SearchIcon />
+          <Header />
           <Category />
+          <NewCategory />
           {/* <NewSection /> */}
-          <Navbar />
-        </div>
+         
       </div>
     );
 }

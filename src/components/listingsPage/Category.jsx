@@ -1,55 +1,80 @@
-import { useState, useEffect } from "react";
-import styles from './Category.module.css'
-import TrendingItem from "./TrendingItem";
+import { useNavigate } from "react-router-dom";
+const products = [
+  {
+    id: 1,
+    name: 'KNWLS',
+    href: '#',
+    subtitle: 'Multicolor Top, UK 14',
+    price: 'Rent From $48',
+    imageSrc: 'https://by-rotation-prod.imgix.net/d5160c3c-e955-41eb-a662-2a5f4c367c07.jpeg?ixlib=js-3.7.1&auto=format&w=640',
+    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+  },
+  {
+    id: 2,
+    name: 'Nomad Tumbler',
+    href: '#',
+    subtitle: 'White Dress, UK 15',
+    price: 'Rent From $35',
+    imageSrc: 'https://by-rotation-prod.imgix.net/11fe8a29-67ea-4466-998c-89e772cda089.jpeg?ixlib=js-3.7.1&auto=format&w=384',
+    imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+  },
+  {
+    id: 3,
+    name: 'Anne Louise Boutique',
+    href: '#',
+    price: 'Rent From $89',
+    subtitle: 'Orange Dress, UK 8',
+    imageSrc: 'https://by-rotation-prod.imgix.net/ac7082c2-4efd-4356-8b9b-cb4528be0324.jpeg?ixlib=js-3.7.1&auto=format&w=384',
+    imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
+  },
+  {
+    id: 4,
+    name: 'Cult Gaia',
+    href: '#',
+    price: 'Rent From $35',
+    subtitle: 'Silver Bag',
+    imageSrc: 'https://by-rotation-prod.imgix.net/509a41c3-cc8d-4449-9854-6c0fb94356e2.jpeg?ixlib=js-3.7.1&auto=format&w=384',
+    imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+  },
+  {
+    id: 5,
+    name: 'Sophia Webster',
+    href: '#',
+    price: 'Rent From $45',
+    subtitle: 'Yellow Shoes, UK 45',
+    imageSrc: 'https://by-rotation-prod.imgix.net/1e454e81-cb26-4b54-bfd6-f92fc08b7c64.jpeg?ixlib=js-3.7.1&auto=format&w=640',
+    imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+  },
+  // More products...
+]
 
-const Category = (props) => {
-    
-    return (
-      <div className={styles.container}>
-        <div className={styles.Category}>
-          <h2>Trending Items</h2>
-          <div className={styles.itemListings}>
-            <TrendingItem />
-          </div>
-        </div>
-        <div className={styles.Category}>
-          <h2>Wedding Guest</h2>
-          <div className={styles.itemListings}>
-            <TrendingItem />
-          </div>
-        </div>
-        <div className={styles.Category}>
-          <h2>Holiday</h2>
-          <div className={styles.itemListings}>
-            <TrendingItem />
-          </div>
-        </div>
-        <div className={styles.Category}>
-          <h2>Brunch</h2>
-          <div className={styles.itemListings}>
-            <TrendingItem />
-          </div>
-        </div>
-        <div className={styles.Category}>
-          <h2>Dine with me</h2>
-          <div className={styles.itemListings}>
-            <TrendingItem />
-          </div>
-        </div>
-        <div className={styles.Category}>
-          <h2>Aso-ebi</h2>
-          <div className={styles.itemListings}>
-            <TrendingItem />
-          </div>
-        </div>
-        <div className={styles.Category}>
-          <h2>Lounge wear</h2>
-          <div className={styles.itemListings}>
-            <TrendingItem />
-          </div>
+export default function Category() {
+  const navigate = useNavigate();
+  const navigateToViewing = () => {
+  navigate("/viewing");
+};
+  return (
+    <div className="bg-white">
+      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+      <h2 className="text-2xl font-bold tracking-tight text-gray-900">Hot Deals </h2>
+
+        <div className="grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-x-8">
+          {products.map((product) => (
+            <a key={product.id} onClick={navigateToViewing} href={product.href} className="group hover:shadow-xl p-3">
+              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden  rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                <img
+                  src={product.imageSrc}
+                  alt={product.imageAlt}
+                  className="h-full w-full object-cover object-center group-hover:opacity-75"
+                />
+              </div>
+              <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
+              <p className="mt-1 text-sm font-medium text-gray-600">{product.subtitle}</p>
+              <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
+            </a>
+          ))}
         </div>
       </div>
-    );
+    </div>
+  )
 }
-
-export default Category;

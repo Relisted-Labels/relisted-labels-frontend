@@ -3,11 +3,13 @@
 }
 .linkStyle{
     text-decoration: none;
-    color: black;
+    color: gray;
+    font-size: 15px;
 }
 .linkContain{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    margin-top: 5px;
 }
 .link{
     display: flex;
@@ -42,9 +44,10 @@
     margin-bottom: 10px;
 }
 .authHeader {
-    font-size: 48px;
+    font-size: 45px;
     text-align: center;
     font-weight: 100;
+    color: rgb(255, 103, 141);
 }
 
 .authTitle {
@@ -54,15 +57,7 @@
     font-weight: 100;
 }
 
-.authForm input {
-    border: none;
-    border-bottom: 1px solid black;
-    outline: none;
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 10px;
-    padding-left: 10px;
-}
+
 
 .authForm .buttonSpan {
     display: flex;
@@ -176,15 +171,8 @@
         font-weight: 600;
         /* margin-bottom: 20px; */
     }
-    .authForm input{
-        height: 45px;
-        padding-left: 10px;
-        font-size: 18px;
-    }
-    .authForm label{
-        font-size: 20px;
-        font-weight: 600;
-    }
+
+
     .buttonSpan button{
         height: 55px;
         width: 250px;
