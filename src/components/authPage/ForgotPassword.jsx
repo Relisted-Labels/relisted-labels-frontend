@@ -58,7 +58,7 @@ return (
   
 <section class="bg-gray-50 dark:bg-gray-900">
   <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-      <a href="/" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+      <a href="/" class="flex logo-font items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
           Relisted Labels    
       </a>
       <div class="w-full p-6 bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md dark:bg-gray-800 dark:border-gray-700 sm:p-8">
@@ -82,7 +82,7 @@ return (
                     <label for="newsletter" class="font-light text-gray-500 dark:text-gray-300">I accept the <a class="font-medium text-primary-600 hover:underline dark:text-primary-500" href="/terms">Terms and Conditions</a></label>
                   </div>
               </div>
-              <button type="submit" class="w-full text-white bg-pink-600 hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800" onClick={handleSubmit}
+              <button type="submit" class="w-full text-white bg-[#B0A3CE] hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800" onClick={handleSubmit}
              importance="primary"
              name={loading ? <Spinner /> : "Confirm Email"}>{loading ? "Loading......" : "Confirm Email"}</button>
              <button type="submit" class="w-full text-gray-900 bg-white  ring-2 ring-gray-900 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center " onClick={navigateToAuth}

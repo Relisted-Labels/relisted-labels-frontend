@@ -132,7 +132,7 @@ const AuthPage = () => {
         <div className={styles.authFormContainer}>
           <form className='{styles.authForm}' onSubmit={registerHandler}>
           <div className="flex items-center">
-            <h2 className="text-2xl font-extrabold text-pink-600">Welcome to Relisted Labels !</h2>
+            <h2 className="text-2xl font-extrabold text-[#B0A3CE]">Welcome to Relisted Labels !</h2>
             </div><div className="flex items-center">
             <h4 className="text-lg">CREATE AN ACCOUNT</h4>
             </div>
@@ -216,7 +216,7 @@ const AuthPage = () => {
                         <label for="terms" class="font-light text-gray-500 dark:text-gray-300">I accept the <a class="font-medium text-primary-600 hover:underline dark:text-primary-500" href="/terms">Terms and Conditions</a></label>
                       </div>
                   </div>
-                  <button class="w-full text-white bg-pink-600 hover:bg-pink-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-2" name="Sign Up"
+                  <button class="w-full text-white bg-[#B0A3CE] hover:bg-[#B0A3CE] focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-2" name="Sign Up"
                 disabled={isSubmitDisabled}
                 onClick={registerHandler}>Create an account</button>
                  
@@ -270,7 +270,7 @@ const AuthPage = () => {
               </Link>
             </p>
 
-            <button class="w-full text-white bg-pink-600 hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-2"
+            <button class="w-full text-white bg-[#B0A3CE] hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-2"
                 name="Log in"
                 onClick={loginHandler}>Login</button>
             
