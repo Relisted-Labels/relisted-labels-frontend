@@ -33,6 +33,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    padding: 5px;
 }
 
 .authForm {
@@ -44,7 +45,7 @@
     margin-bottom: 10px;
 }
 .authHeader {
-    font-size: 45px;
+    font-size: 35px;
     text-align: center;
     font-weight: 100;
     color: rgb(255, 103, 141);
