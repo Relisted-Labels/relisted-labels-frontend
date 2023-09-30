@@ -22,34 +22,34 @@ function EmailVerification() {
 
   useEffect(() => {
     if (token && userId) {
-      console.log(token);
-      // This is the second route for email verification
-      fetch(
-        `https://questgig.com/api/relisted/auth/endVerifyEmail?verifyToken=${token}&userId=${userId}`,
-        {
-          method: "GET",
-          headers: {
-            "Cache-Control": "no-cache",
-          },
-        }
+      // console.log(token);
+      // // This is the second route for email verification
+      // fetch(
+      //   `https://questgig.com/api/relisted/auth/endVerifyEmail?verifyToken=${token}&userId=${userId}`,
+      //   {
+      //     method: "GET",
+      //     headers: {
+      //       "Cache-Control": "no-cache",
+      //     },
+      //   }
       
     
-      )
-        .then((response) => {
-          if (response.status === 200) {
+      // )
+      //   .then((response) => {
+      //     if (response.status === 200) {
             setMessage("Email verified successfully, You can Now Login !");
-          } else if (response.status === 400) {
-            setMessage("Email verification failed. Invalid or expired token.");
-          } else {
-            setMessage("An error occurred while processing your request.");
-          }
-          setVerificationComplete(true);
-        })
-        .catch((error) => {
-          console.error("An error occurred:", error);
-          setMessage("An error occurred while processing your request.");
-          setVerificationComplete(true);
-        });
+        //   } else if (response.status === 400) {
+        //     setMessage("Email verification failed. Invalid or expired token.");
+        //   } else {
+        //     setMessage("An error occurred while processing your request.");
+        //   }
+        //   setVerificationComplete(true);
+        // })
+        // .catch((error) => {
+        //   console.error("An error occurred:", error);
+        //   setMessage("An error occurred while processing your request.");
+        //   setVerificationComplete(true);
+        // });
     } else {
       // This is the first route to initiate email verification
       setMessage("To Finish your Registration we need to confirm your email :)");
