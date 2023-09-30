@@ -78,7 +78,7 @@ const AuthPage = () => {
         const userData = response.data.userData;
         localStorage.setItem("userData", userData);
         navigate("/emailverification");
-        setHasAccount(true);
+        // setHasAccount(true);
       } else {
         error =
           "An unknown error occurred. Please validate your details and try again.";

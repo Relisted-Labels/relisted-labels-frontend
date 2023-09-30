@@ -1,6 +1,18 @@
 @media (max-width: 768px) {
-.sm-hidden {
-    display: none;
-}
-
-}
+    .sm-hidden {
+      display: none;
+    }
+  }
+  
+  @font-face {
+    font-family: 'Brice'; /* Name your font */
+    src: url('assets/BriceRegularSemiExpanded.otf') format('opentype'); /* Specify the URL of your font file and format */
+    font-weight: bold; /* Specify font weight */
+    font-style: normal; /* Specify font style */
+  }
+  
+  /* Apply the 'Brice' font directly to elements with the class '.logo-font' */
+  .logo-font {
+    font-family: 'Brice'; /* Use 'Brice' font without any fallback */
+  }
+  
