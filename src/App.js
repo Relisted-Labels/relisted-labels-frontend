@@ -11,6 +11,7 @@ import PasswordReset from './components/authPage/PasswordReset';
 import EmailVerification from './components/authPage/EmailVerification';
 import ListingsPage from './components/listingsPage/ListingsPage';
 import ItemView from './components/itemViewing/ItemViewing';
+import Main from './components/profile/Main';
 
 function App() {
   useEffect(() => {
@@ -28,6 +29,7 @@ function App() {
         <Route exact path="/passwordreset/:token" element={<PasswordReset />} />
         <Route exact path="/emailverification" element={<EmailVerification />} />
         <Route exact path="/emailverification/:token" element={<EmailVerification />} />
+        <Route exact path="/profile" element={<Main />} />
         {/* Add more routes here if needed */}
       </Routes>
     </BrowserRouter>
