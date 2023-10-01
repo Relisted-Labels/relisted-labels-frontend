@@ -3,6 +3,7 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useNavigate } from "react-router-dom";
 import  "./Hero.module.css";
+import Image from './301812806_106078615569021_7118600893979540292_n-removebg-preview.png';
 
 const navigation = [
   { name: 'New In', href: '#' },
@@ -98,7 +99,7 @@ export default function Hero() {
         </Dialog>
       </header>
       
-      <div className="grid max-w-screen-xl mt-3 px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+      <div className="grid max-w-screen-xl mt-3 px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 bg-gradient-to-r from-[#ebebeb] to-[#ffecec] ">
         <div className="mr-auto place-self-center lg:col-span-7">
         <a href="#" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
             <span class="text-xs bg-gradient-to-r from-[#B0A3CE] to-[#ECCDCB] rounded-full text-gray-900 px-4 py-1.5 mr-3">Hot</span> <span class="text-sm font-medium">50% Discount for New Users</span> 
@@ -115,7 +116,7 @@ export default function Hero() {
           </a> 
         </div>
         <div className="hidden lg:mt-0  lg:col-span-5 lg:flex mt-3">
-          <img src="https://scontent.cdninstagram.com/v/t51.2885-15/301812806_106078615569021_7118600893979540292_n.jpg?stp=dst-jpg_e35&_nc_ht=scontent.cdninstagram.com&_nc_cat=109&_nc_ohc=Q6Za9j1OiW0AX8mRopj&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MjkxNDk2MDY1MDQzMTYwMzUwNQ%3D%3D.2-ccb7-5&oh=00_AfApMgLcmvMind4PLjc90yZxiGmdE6pg5KxSpM1P2FdApw&oe=651E5BF7&_nc_sid=10d13b" alt="mockup" className=''/>
+          <img src={Image} alt="mockup" className=''/>
         </div>                
       </div>
    
