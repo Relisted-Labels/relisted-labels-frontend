@@ -276,7 +276,7 @@ export default function Header() {
 
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   <div className="flow-root">
-                    <a href="#" className="-m-2 block p-2 font-medium text-gray-900">
+                    <a href="/profile" className="-m-2 block p-2 font-medium text-gray-900">
                       Hi, {username}
                     </a>
                   </div>
@@ -321,9 +321,10 @@ Get free delivery on orders over $100, T&C Applied
 
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
-                <a href="#">
-                 <p className='text-gray-800 text-lg font-bold'>Relisted Labels</p>
-                </a>
+                <a href="#" className='text-gray-700'>
+            <p className="text-lg font-bold logo-font">RELISTED</p>
+            <p className='logo-font text-xs'>Labels</p>
+          </a>
               </div>
 
               {/* Flyout menus */}
@@ -428,7 +429,7 @@ Get free delivery on orders over $100, T&C Applied
 
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                  <a href="#" className="text-sm font-medium text-gray-700 hover:text-gray-800">
+                  <a href="/profile" className="text-sm font-medium text-gray-700 hover:text-gray-800">
                     Hi, {username}
                   </a>
                   <span className="h-6 w-px bg-gray-200" aria-hidden="true" />

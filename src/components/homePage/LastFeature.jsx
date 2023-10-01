@@ -4,7 +4,7 @@ export default function LastFeature() {
     return (
 <div className="bg-white ">
     <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-        <img className="w-half relative z-10" data-aos="fade-down" data-aos-duration="1200" src="https://www.net-a-porter.com/content/images/cms/ycm/resource/blob/1849810/aebdc5c2f7673faf9f6a6b6cfe170ac2/image-desktop-data.jpg/w1500_q80.jpg" alt="Relistlabels"/>
+        <img className="w-half relative z-10" data-aos="fade-down" data-aos-duration="1200" src="https://questgig.com/api/relisted/images/image10.jpg" alt="Relistlabels"/>
        
         <div className="mt-4 md:mt-0 relative z-10">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">Hand-Embroidered.</h2>

@@ -56,7 +56,8 @@ export default function Category() {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-      <h2 className="text-2xl font-bold tracking-tight text-gray-900">Special Collections</h2>
+        <p className="text-lg font-light text-gray-600 ml-5">817 NEW ITEMS</p>
+      <h2 className="text-2xl font-bold tracking-tight ml-5 futura text-gray-900">New In</h2>
 
         <div className="grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-x-8">
           {products.map((product) => (
@@ -74,7 +75,7 @@ export default function Category() {
           ))}
         </div>
         <div className="flex justify-center">
-        <a href="#" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+        <a href="/listings" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
            View Latest Collections
           </a> 
           </div>

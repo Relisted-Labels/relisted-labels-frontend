@@ -12,7 +12,8 @@ import EmailVerification from './components/authPage/EmailVerification';
 import ListingsPage from './components/listingsPage/ListingsPage';
 import ItemView from './components/itemViewing/ItemViewing';
 import Main from './components/profile/Main';
-
+import ViewMain from './components/profile/ViewMain';
+import EditProfile from './components/profile/Edit-Profile';
 function App() {
   useEffect(() => {
     AOS.init();
@@ -30,6 +31,9 @@ function App() {
         <Route exact path="/emailverification" element={<EmailVerification />} />
         <Route exact path="/emailverification/:token" element={<EmailVerification />} />
         <Route exact path="/profile" element={<Main />} />
+        <Route exact path="/profile/:id" element={<ViewMain />} />
+        <Route exact path="/profile/edit/" element={<EditProfile />} />
+
         {/* Add more routes here if needed */}
       </Routes>
     </BrowserRouter>

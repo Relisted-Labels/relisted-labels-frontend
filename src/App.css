@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;600;700&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;600;700&family=PT+Serif&family=Young+Serif&display=swap');
 @media (max-width: 768px) {
     .sm-hidden {
       display: none;
@@ -22,10 +22,30 @@
     font-family: 'Brice'; /* Use 'Brice' font without any fallback */
   }
   
-  p, h1{
+  /* p, h1{
     font-family: 'AR One Sans', sans-serif;
     font-family: 'Young Serif', serif;
-  }
+  } */
   .bg-hero {
     background-image: url(https://i0.wp.com/www.tantvstudios.com/wp-content/uploads/2023/04/5f36ca2264db96846108cd23_Five-African-Ladies-inn-2017-B.jpg?fit=1400%2C1811&ssl=1);
+}
+
+.hero-img {
+  margin-top: 96px;
+}
+
+.futura {
+  font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+}
+
+.bg-primary {
+  background-color: #B0A3CE;
+}
+
+.text-primary {
+  color: #B0A3CE;
+}
+
+.times-new-roman {
+  font-family: 'PT Serif', serif;
 }

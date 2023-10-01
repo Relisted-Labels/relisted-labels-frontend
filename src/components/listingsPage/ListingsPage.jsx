@@ -31,11 +31,11 @@ const ListingsPage = () => {
          setUserName(userData.username);
          return userInfo;
        } else {
-         navigate("/auth");
+        setUserName("Guest");
        }
      } catch (error) {
        console.error("Error decoding token:", error);
-       navigate("/auth"); 
+      //  navigate("/auth"); 
      }
    };
 
