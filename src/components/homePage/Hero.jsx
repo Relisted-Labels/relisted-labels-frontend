@@ -28,7 +28,7 @@ export default function Hero() {
   return (
     <div className="bg-white">
       <div className='fixed top-0 inset-x-0 z-50'>
-      <header className='absolute inset-x-0 top-0 z-50 bg-gradient-to-r to-[#B0A3CE] from-[#ECCDCB] opacity-80'>
+      <header className='absolute inset-x-0 top-0 z-50 bg-gradient-to-r to-[#B0A3CE] from-[#ECCDCB]'>
         <nav className="flex items-center lg:justify-center  p-3 lg:px-3" aria-label="Global">
         <div className="flex lg:hidden">
           <button
