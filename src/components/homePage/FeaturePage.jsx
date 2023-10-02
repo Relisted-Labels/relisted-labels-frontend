@@ -20,7 +20,7 @@ const products = [
   },
   {
     id: 3,
-    name: 'Anne Louise Boutique',
+    name: 'Anne Louise',
     href: '#',
     price: 'Rent From $89',
     subtitle: 'Orange Dress, UK 8',
@@ -69,7 +69,7 @@ New arrivals, now five days a week – discover the latest</p>
         <div className="flex space-x-2 mt-3 hide-scrollbar transition-transform duration-300 ease-in-out">
           {products.map((product) => (
             <a key={product.id} onClick={navigateToViewing} href={product.href} className="group hover:shadow-xl">
-              <div className="w-[160px]">
+              <div className="w-[120px]">
                 <img
                   src={product.imageSrc}
                   alt={product.imageAlt}

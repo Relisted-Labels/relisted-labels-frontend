@@ -29,7 +29,7 @@ export default function Hero() {
     <div className="bg-white">
       <div className='fixed top-0 inset-x-0 z-50'>
       <header className='absolute inset-x-0 top-0 z-50 bg-gradient-to-r to-[#B0A3CE] from-[#ECCDCB] opacity-80'>
-        <nav className="flex items-center lg:justify-center  p-6 lg:px-8" aria-label="Global">
+        <nav className="flex items-center lg:justify-center  p-3 lg:px-3" aria-label="Global">
         <div className="flex lg:hidden">
           <button
             type="button"
@@ -37,19 +37,19 @@ export default function Hero() {
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-10 w-10" aria-hidden="true" />
+            <Bars3Icon className="h-5 w-5" aria-hidden="true" />
           </button>
         </div>
-        <div className='flex text-center lg:ml-1 ml-20'>
+        <div className='flex text-center lg:ml-1 ml-[110px]'>
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <p className="text-2xl font-bold logo-font">RELISTED</p>
+            <p className="text-1xl font-bold logo-font">RELISTED</p>
             <p className='logo-font text-xs'>Labels</p>
           </a>
           </div>
         </nav>
       </header>
-      <header className="mt-[90px] lg:bg-white">
+      <header className="mt-[60px] lg:bg-white">
       <nav className="flex items-center justify-center pt-5 pb-3 lg:px-8" aria-label="Global">
         
        
@@ -107,7 +107,7 @@ export default function Hero() {
       </header>
       </div>
       
-      <div className='lg:p-5 sm:p-0'>
+      <div className='lg:p-5 sm:p-0 -mt-[32px]'>
         <div className='bg-hero1'>
             <img src="https://questgig.com/api/relisted/images/327862073_1329718951174745_4753541720980693501_n (2).jpg" data-aos="zoom-in" data-aos-duration="1200" className='hero-img sm-hidden' />
             <img src="https://questgig.com/api/relisted/images/327862073_1329718951174745_4753541720980693501_n.jpg" data-aos="zoom-in" data-aos-duration="1200" className='hero-img lg-hidden' />

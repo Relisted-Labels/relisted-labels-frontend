@@ -84,7 +84,7 @@
 /* Hide the scrollbar */
 .hide-scrollbar::-webkit-scrollbar {
   width: 0.2em;
-  height: 0em;
+  height: 0.2em;
 }
 
 /* Track */

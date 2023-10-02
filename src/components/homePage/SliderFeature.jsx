@@ -1,10 +1,10 @@
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa'; // Import the arrow icon
-
+import { useNavigate } from "react-router-dom";
 const data = [
   {
     id: 1,
-    title: 'Noteworthy technology acquisitions',
+    title: 'Design E',
     image: 'https://questgig.com/api/relisted/images/image17.jpg',
     description:
       'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological .',
@@ -12,7 +12,7 @@ const data = [
   },
   {
     id: 2,
-    title: 'Another Technology Topic',
+    title: 'Design D',
     image: 'https://questgig.com/api/relisted/images/image11.jpg',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida.',
@@ -20,7 +20,7 @@ const data = [
   },
   {
     id: 3,
-    title: 'Yet Another Technology Topic',
+    title: 'Design C',
     image: 'https://questgig.com/api/relisted/images/image13.jpg',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida.',
@@ -28,7 +28,7 @@ const data = [
   },
   {
     id: 3,
-    title: 'Yet Another Technology Topic',
+    title: 'Design B',
     image: 'https://questgig.com/api/relisted/images/image13.jpg',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida.',
@@ -36,7 +36,7 @@ const data = [
   },
   {
     id: 3,
-    title: 'Yet Another Technology Topic',
+    title: 'Design A',
     image: 'https://questgig.com/api/relisted/images/image13.jpg',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida.',
@@ -46,35 +46,28 @@ const data = [
 ];
 
 export default function EndFeature() {
+  const navigate = useNavigate();
+  const navigateToViewing = () => {
+  navigate("/viewing");
+};
   return (
     <div className='bg-purple-50 p-5'>
     <div className='flex justify-center'><h1 className=''>THIS SEASON’S KEY STYLES</h1></div>
     
-    <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-4 p-5">
-      {data.map((item) => (
-        <div
-          key={item.id}
-          className="max-w-md  "
-        >
-          <a href={item.link}>
-            <img
-              data-aos="fade-in"
-              data-aos-duration="1200"
-              className=""
-              src={item.image}
-              alt={item.title}
-            />
-          </a>
-          <div className="p-5">
-            <a href={item.link}>
-              <h5 className="mb-2 text-sm font-light tracking-tight times-new-roman text-gray-900 ">
-                {item.title}
-              </h5>
+    <div className="flex space-x-2 hide-scrollbar p-5">
+{data.map((item) => (
+            <a key={item.id} onClick={navigateToViewing} href={item.link} className="group hover:shadow-xl">
+              <div className="w-[170px]">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="h-full w-full "
+                />
+              </div>
+              <h3 className="mt-4 text-lg text-black">{item.title}</h3>
+              
             </a>
-            
-          </div>
-        </div>
-      ))}
+          ))}
     </div>
     </div>
   );
