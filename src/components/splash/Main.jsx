@@ -19,6 +19,13 @@ function ClothingRentalService() {
     }
   };
 
+  useEffect(() => {
+    // Simulate loading your content here
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
+
   const navigate = useNavigate();
   const navigateToAuth = () => {
     navigate("/auth");
@@ -27,12 +34,7 @@ function ClothingRentalService() {
     navigate("/home");
   };
 
-  useEffect(() => {
-    // Simulate loading your content here
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-  }, []);
+ 
   const slides = [
     <div key={1}>
       <div className="relative h-screen">
@@ -48,17 +50,18 @@ function ClothingRentalService() {
            </button> */}
           </div>
         )}
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute splash-position">
           <div>
-            <h2 className="text-2xl text-white font-extrabold futura">
-              ACCESS THE STYLE YOU LOVE
+            <h2 className="text-3xl text-white font-extrabold futura">
+              ACCESS THE STYLE<br /> YOU LOVE.
             </h2>
-            <p className="text-sm text-gray-100 font-bold futura">
-              Experience our secure community to keep you looking fabulous
-              without breaking your bank.
+            </div></div>
+            <div className="absolute inset-0 flex items-center justify-center">
+            <p className="text-lg text-gray-100 font-bold futura">
+              Experience our secure community to<br /> keep you looking fabulous
+              without<br /> breaking your bank.
             </p>
           </div>
-        </div>
       </div>
     </div>,
     <div key={2}>
@@ -68,16 +71,29 @@ function ClothingRentalService() {
           alt="Slide 2"
           className="h-full w-full object-cover"
         />
+        
+        <div className="absolute top-0 left-0 right-0 p-4">
+          <a href="#" className="-m-1.5 p-1.5">
+            <span className="sr-only">Your Company</span>
+            <p className="text-2xl font-bold text-white logo-font">RELISTED</p>
+            <p className="logo-font text-sm text-white ml-4">Labels</p>
+          </a>
+        </div>
+        <div className="absolute inset-0 top-[60vh] top left-0 right-0 p-2">
+          <h2 className="text-xl text-white font-light futura mt-5">
+            Access the Brands you love and empower your wardrobe
+          </h2>
+        </div>
         {currentSlide < 3 && (
           <div className="absolute bottom-0 buttom left-0 right-0  p-4 justify-center flex">
             <div>
               <div className="flex space-x-3 mb-3 p-5">
-                <button
+                <a
                   onClick={navigateToAuth}
                   className="login-button bg-white w-[150px]  text-gray-900 py-2 px-4 font-bold mr-2"
                 >
                   Sign Up
-                </button>
+                </a>
                 <button
                   onClick={navigateToAuth}
                   className="register-button bg-black w-[150px]  text-white font-bold py-2 px-4 mr-2"
@@ -95,18 +111,6 @@ function ClothingRentalService() {
             </div>
           </div>
         )}
-        <div className="absolute top-0 left-0 right-0 p-4">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <p className="text-2xl font-bold text-white logo-font">RELISTED</p>
-            <p className="logo-font text-sm text-white ml-4">Labels</p>
-          </a>
-        </div>
-        <div className="absolute inset-0 top-[60vh] top left-0 right-0 p-2">
-          <h2 className="text-xl text-white font-light futura mt-5">
-            Access the Brands you love and empower your wardrobe
-          </h2>
-        </div>
       </div>
     </div>,
   ];
@@ -130,7 +134,7 @@ function ClothingRentalService() {
                 showArrows={true}
                 showStatus={false}
                 showIndicators={true}
-                autoPlay={true}
+                autoPlay={false}
                 showThumbs={false}
                 infiniteLoop={false}
                 selectedItem={currentSlide}
