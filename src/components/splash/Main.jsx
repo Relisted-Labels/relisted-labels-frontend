@@ -134,7 +134,7 @@ function ClothingRentalService() {
                 showArrows={true}
                 showStatus={false}
                 showIndicators={true}
-                autoPlay={false}
+                autoPlay={true}
                 showThumbs={false}
                 infiniteLoop={false}
                 selectedItem={currentSlide}
