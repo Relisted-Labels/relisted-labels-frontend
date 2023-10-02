@@ -108,7 +108,7 @@ export default function Hero() {
       </div>
       
       <div className='lg:p-5 sm:p-0'>
-        <div className='bg-hero'>
+        <div className='bg-hero1'>
             <img src="https://questgig.com/api/relisted/images/327862073_1329718951174745_4753541720980693501_n (2).jpg" data-aos="zoom-in" data-aos-duration="1200" className='hero-img sm-hidden' />
             <img src="https://questgig.com/api/relisted/images/327862073_1329718951174745_4753541720980693501_n.jpg" data-aos="zoom-in" data-aos-duration="1200" className='hero-img lg-hidden' />
             </div>
