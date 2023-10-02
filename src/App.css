@@ -17,6 +17,10 @@
     .bg-splash {
       background-image: url('https://questgig.com/api/relisted/images/321047656_199967325929041_8755075386117953127_n (1).jpg');
     }
+    .scroll-res {
+      display: flex;
+      gap: 100px;
+    }
   }
   
   @font-face {
@@ -73,4 +77,23 @@
   top: 120px;
   left: -95px;
   right: 0px;
+}
+.hide-scrollbar {
+  overflow-y: scroll;
+}
+/* Hide the scrollbar */
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0.2em;
+  height: 0em;
+}
+
+/* Track */
+.hide-scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* Background color of the track */
+}
+
+/* Handle */
+.hide-scrollbar::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar handle */
+  border-radius: 25px; /* Radius of the scrollbar handle */
 }

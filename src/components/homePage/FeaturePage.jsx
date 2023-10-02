@@ -55,29 +55,36 @@ export default function Category() {
 };
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <p className="text-lg font-light text-gray-600 ml-5">817 NEW ITEMS</p>
-      <h2 className="text-2xl font-bold tracking-tight ml-5 futura text-gray-900">New In</h2>
-
-        <div className="grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-x-8">
+      <div className="mx-auto  max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-5">
+        <div className="scroll-res">
+        <div className="mt-10">
+        <p className="text-lg font-light text-gray-600">817 NEW ITEMS</p>
+      <h2 className="text-4xl font-bold tracking-tight  futura text-gray-900">New In</h2>
+      <p className=" font-light futura text-black">
+New arrivals, now five days a week – discover the latest</p>
+<a href="/listings" className="inline-flex sm-hidden bg-black items-center mt-3  justify-center px-10 py-3 text-base font-medium text-center text-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 ">
+           Shop New In
+          </a> 
+      </div>
+        <div className="flex space-x-2 mt-3 hide-scrollbar transition-transform duration-300 ease-in-out">
           {products.map((product) => (
-            <a key={product.id} onClick={navigateToViewing} href={product.href} className="group hover:shadow-xl p-3">
-              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden  rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+            <a key={product.id} onClick={navigateToViewing} href={product.href} className="group hover:shadow-xl">
+              <div className="w-[160px]">
                 <img
                   src={product.imageSrc}
                   alt={product.imageAlt}
-                  className="h-full w-full object-cover object-center group-hover:opacity-75"
+                  className="h-full w-full "
                 />
               </div>
-              <h3 className="mt-4 text-lg text-gray-700">{product.name}</h3>
+              <h3 className="mt-4 text-lg text-black">{product.name}</h3>
               
             </a>
           ))}
-        </div>
-        <div className="flex justify-center">
-        <a href="/listings" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-           View Latest Collections
-          </a> 
+        </div></div>
+        <div className="flex justify-center lg-hidden">
+        <a href="/listings" className="inline-flex lg-hidden bg-black items-center mt-3  justify-center px-10 py-3 text-base font-medium text-center text-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 ">
+           Shop New In
+          </a>  
           </div>
       </div>
     </div>
