@@ -4,7 +4,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './output.css';
 import './App.css';
-import HomePage from './components/homePage/HomePage'; // Adjust the path as needed
+import HomePage from './components/homePage/HomePage';
+import Splash from './components/splash/Main' // Adjust the path as needed
 import AuthPage from './components/authPage/AuthPage';
 import ForgotPassword from './components/authPage/ForgotPassword';
 import PasswordReset from './components/authPage/PasswordReset';
@@ -21,7 +22,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<HomePage/>} />
+        <Route exact path="/home" element={<HomePage/>} />
+        <Route exact path="/" element={<Splash />} />
         <Route exact path="/auth" element={<AuthPage/>} />
         <Route exact path="/listings" element={<ListingsPage/>} />
         <Route exact path="/viewing" element={<ItemView/>} />

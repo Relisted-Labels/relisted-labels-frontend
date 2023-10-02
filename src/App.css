@@ -3,10 +3,19 @@
     .sm-hidden {
       display: none;
     }
+    .bg-splash {
+  background-image: url('https://questgig.com/api/relisted/images/WhatsApp Image 2023-10-01 at 23.24.08.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+    
   }
   @media (min-width: 768px) {
     .lg-hidden {
       display: none;
+    }
+    .bg-splash {
+      background-image: url('https://questgig.com/api/relisted/images/321047656_199967325929041_8755075386117953127_n (1).jpg');
     }
   }
   
@@ -27,8 +36,10 @@
     font-family: 'Young Serif', serif;
   } */
   .bg-hero {
-    background-image: url(https://i0.wp.com/www.tantvstudios.com/wp-content/uploads/2023/04/5f36ca2264db96846108cd23_Five-African-Ladies-inn-2017-B.jpg?fit=1400%2C1811&ssl=1);
+    background-image: url(https://questgig.com/api/relisted/images/327862073_1329718951174745_4753541720980693501_n.jpg);
 }
+
+
 
 .hero-img {
   margin-top: 96px;
