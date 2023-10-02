@@ -302,7 +302,11 @@ export default function Header() {
 
       <header className="relative bg-white">
 <p className="flex h-10 items-center justify-center bg-gradient-to-r from-[#B0A3CE] to-[#ECCDCB] px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
-Get free delivery on orders over $100, T&C Applied
+<a href="#" className="-m-1.5 p-1.5">
+            <span className="sr-only">Your Company</span>
+            <p className="text-1xl font-bold logo-font">RELISTED</p>
+            <p className='logo-font text-xs ml-4'>Labels</p>
+          </a>
 </p>
 
 
@@ -320,12 +324,12 @@ Get free delivery on orders over $100, T&C Applied
               </button>
 
               {/* Logo */}
-              <div className="ml-4 flex lg:ml-0">
+              {/* <div className="ml-4 flex lg:ml-0">
                 <a href="#" className='text-gray-700'>
             <p className="text-lg font-bold logo-font">RELISTED</p>
             <p className='logo-font text-xs'>Labels</p>
           </a>
-              </div>
+              </div> */}
 
               {/* Flyout menus */}
               <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch">

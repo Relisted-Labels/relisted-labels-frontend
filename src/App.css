@@ -60,3 +60,11 @@
 .times-new-roman {
   font-family: 'PT Serif', serif;
 }
+
+.top {
+  top: 60vh;
+}
+
+.buttom {
+  bottom: 5vh;
+}
