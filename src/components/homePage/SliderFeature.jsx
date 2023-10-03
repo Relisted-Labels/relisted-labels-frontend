@@ -54,7 +54,7 @@ export default function EndFeature() {
     <div className='bg-purple-50 p-5'>
     <div className='flex justify-center'><h1 className='text-2xl futura'>BLACK - TIE</h1></div>
     
-    <div className="flex space-x-2 justify-center hide-scrollbar p-5">
+    <div className="flex space-x-2 lg:justify-center hide-scrollbar p-5">
 {data.map((item) => (
             <a key={item.id} onClick={navigateToViewing} href={item.link} className="group hover:shadow-xl">
               <div className="w-[170px]">
