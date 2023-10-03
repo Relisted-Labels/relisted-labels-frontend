@@ -52,9 +52,9 @@ export default function EndFeature() {
 };
   return (
     <div className='bg-purple-50 p-5'>
-    <div className='flex justify-center'><h1 className=''>THIS SEASON’S KEY STYLES</h1></div>
+    <div className='flex justify-center'><h1 className='text-2xl futura'>BLACK - TIE</h1></div>
     
-    <div className="flex space-x-2 hide-scrollbar p-5">
+    <div className="flex space-x-2 justify-center hide-scrollbar p-5">
 {data.map((item) => (
             <a key={item.id} onClick={navigateToViewing} href={item.link} className="group hover:shadow-xl">
               <div className="w-[170px]">
@@ -65,7 +65,9 @@ export default function EndFeature() {
                 />
               </div>
               <h3 className="mt-4 text-lg text-black">{item.title}</h3>
-              
+              <p className="text-sm text-gray-400">UK 6</p>
+              <p className="text-sm text-black">Rent from £26</p>
+              <p className="text-sm text-gray-400 line-through">RRP £120</p>
             </a>
           ))}
     </div>

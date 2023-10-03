@@ -58,10 +58,7 @@ export default function Category() {
       <div className="mx-auto  max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-5">
         <div className="scroll-res">
         <div className="mt-10">
-        <p className="text-lg font-light text-gray-600">817 NEW ITEMS</p>
-      <h2 className="text-4xl font-bold tracking-tight  futura text-gray-900">New In</h2>
-      <p className=" font-light futura text-black">
-New arrivals, now five days a week – discover the latest</p>
+      <h2 className="text-4xl tracking-tight  futura text-gray-900">New In</h2>
 <a href="/listings" className="inline-flex sm-hidden bg-black items-center mt-3  justify-center px-10 py-3 text-base font-medium text-center text-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 ">
            Shop New In
           </a> 
@@ -69,23 +66,21 @@ New arrivals, now five days a week – discover the latest</p>
         <div className="flex space-x-2 mt-3 hide-scrollbar transition-transform duration-300 ease-in-out">
           {products.map((product) => (
             <a key={product.id} onClick={navigateToViewing} href={product.href} className="group hover:shadow-xl">
-              <div className="w-[120px]">
+              <div className="w-[130px]">
                 <img
                   src={product.imageSrc}
                   alt={product.imageAlt}
                   className="h-full w-full "
                 />
               </div>
-              <h3 className="mt-4 text-lg text-black">{product.name}</h3>
-              
+              <h3 className="mt-4 text-sm text-black">{product.name}</h3>
+              <p className="text-sm text-gray-400">UK 6</p>
+              <p className="text-sm text-black">Rent from £26</p>
+              <p className="text-sm text-gray-400 line-through">RRP £120</p>
             </a>
           ))}
         </div></div>
-        <div className="flex justify-center lg-hidden">
-        <a href="/listings" className="inline-flex lg-hidden bg-black items-center mt-3  justify-center px-10 py-3 text-base font-medium text-center text-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 ">
-           Shop New In
-          </a>  
-          </div>
+      
       </div>
     </div>
   )

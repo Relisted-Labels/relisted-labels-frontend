@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;600;700&family=PT+Serif&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
 @media (max-width: 768px) {
     .sm-hidden {
       display: none;
@@ -29,6 +29,10 @@
     font-weight: bold; /* Specify font weight */
     font-style: normal; /* Specify font style */
   }
+
+  * {
+    font-family: 'Tenor Sans', sans-serif;
+  }
   
   /* Apply the 'Brice' font directly to elements with the class '.logo-font' */
   .logo-font {
@@ -50,7 +54,7 @@
 }
 
 .futura {
-  font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+  font-family: 'Tenor Sans', sans-serif;
 }
 
 .bg-primary {
@@ -96,4 +100,11 @@
 .hide-scrollbar::-webkit-scrollbar-thumb {
   background: #888; /* Color of the scrollbar handle */
   border-radius: 25px; /* Radius of the scrollbar handle */
+}
+.slash-price::before {
+  content: "/";
+  position: absolute;
+  top: 50%;
+  left: 0.25rem; /* Adjust the position as needed */
+  transform: translateY(-10%);
 }
